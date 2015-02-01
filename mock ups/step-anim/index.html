@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+	<title>Vertical Fixed Navigation</title>
+</head>
+<body>
+	<nav id="cd-vertical-nav">
+		<ul>
+			<li>
+				<a href="#section1" data-number="1">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Intro</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section2" data-number="2">
+					<span class="cd-dot"></span>
+					<span class="cd-label">About</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section3" data-number="3">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Features</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section4" data-number="4">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Portfolio</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section5" data-number="5">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Pricing</span>
+				</a>
+			</li>
+			<li>
+				<a href="#section6" data-number="6">
+					<span class="cd-dot"></span>
+					<span class="cd-label">Contact</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+	<a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+	<section id="section1" class="cd-section">
+		<h1>Vertical Fixed Navigation</h1>
+		<a href="#section2" class="cd-scroll-down cd-img-replace">scroll down</a>
+	</section><!-- cd-section -->
+
+	<section id="section2" class="cd-section">
+		<img src="img/bg-grey.svg" alt="" class="bg-frame">
+		<img src="img/cloud-1.svg" alt="" class="bg-frame" id="clouds1">
+		<img src="img/base.svg" alt="" class="bg-frame">
+		<img src="img/cloud-2.svg" alt="" class="bg-frame" id="clouds2">
+		<img src="img/cloud-3.svg" alt="" class="bg-frame" id="clouds3">
+		<img src="img/bicycle.svg" alt="" class="bg-frame" id="bike">
+		<img src="img/mr-man.svg" alt="" class="bg-frame" id="">
+		<img src="img/sf-eastlake-3.svg" alt="" class="bg-frame" id="">
+	</section><!-- cd-section -->
+
+	<section id="section3" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+	<section id="section4" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+	<section id="section5" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+
+	<section id="section6" class="cd-section">
+		<p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, totam iusto officia earum perferendis, culpa ad atque eveniet praesentium nobis expedita similique beatae tenetur. Distinctio vel tenetur, id cum.&rdquo;</p>
+	</section><!-- cd-section -->
+	
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+
+<script>
+	$('#clouds1').velocity({ 
+	    marginLeft: "1440px",
+	    opacity   : 0,
+	}, { 
+	    // easing: [ 200 ],
+	    duration: 90000,
+	});
+
+	$('#clouds2').velocity({ 
+	    marginLeft: "1440px",
+	    opacity   : 0,
+	}, { 
+	    // easing: [ 300 ],
+	    duration: 50000,
+	});
+
+	$('#clouds3').velocity({ 
+	    marginLeft: "1440px",
+	    opacity   : 0,
+	}, { 
+	    // easing: [ 400 ],
+	    duration: 70000,
+	});
+
+	$('#bike').velocity({ 
+	    marginLeft: "-1440px",
+	}, { 
+	    // easing: [ 300 ],
+	    duration: 30000,
+	});
+
+</script>
+</body>
+</html>

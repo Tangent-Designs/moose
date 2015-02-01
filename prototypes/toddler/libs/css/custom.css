@@ -1,0 +1,32 @@
+.cd-item .cd-info{
+	font-family: 'roboto';
+}
+
+.cd-item .cd-info-place h1{
+	padding-left: 10px;
+	text-align: center;
+	margin-top: 0 !important;
+	font-weight: 100;
+	color: #74777b;
+}
+
+.cell-distance{
+	color: #0A4569;
+	margin: 0;
+	font-family: 'roboto';
+	font-weight: 100;
+}
+
+.cell-location{
+	color: #74777b;
+	margin: 0;
+	font-family: 'roboto';
+	font-weight: 300;
+}
+
+.cell-hours{
+	color:#0A4569;
+	margin: 0;
+	font-family: 'roboto';
+	font-weight: 300;
+}	
