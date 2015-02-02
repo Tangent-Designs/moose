@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <!-- title and meta -->
+  <meta charset="utf-8">
+  <meta content="width=device-width,initial-scale=1.0" name="viewport">
+  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+
+  <title>Moose : Puberto</title>
+
+  <!-- css -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- js -->
+  <script src="js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div class="wrapper">
+      <section class="lf-wrap" style="z-index:1;">
+        <div class="lf-card"></div>
+        <!-- <div class="service-card"></div> -->
+      </section><!-- cd-section -->
+      
+      <section class="module parallax parallax-1" style="z-index:0;">
+        <div class="container">
+        </div>
+        <div id="clouds" style="z-index:0;">
+            <div class="cloud x1"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+          </div>
+      </section>
+
+      <section class="module content" id="eastlake-info-wrap">
+        <div class="container">
+          <h2>Eastlake</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-2">
+        <div class="container">
+          <!-- <h1>Rise</h1> -->
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+        </div>
+      </section>
+
+      <section class="module parallax parallax-3">
+        <div class="container">
+          <!-- <h1>Calm</h1> -->
+        </div>
+      </section>
+
+      <section class="module content">
+        <div class="container">
+          <h2>Lorem Ipsum Dolor</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+        </div>
+      </section>
+  
+</div><!-- /#wrapper -->
+
+<!-- ads -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+<!-- analytics -->
+<script type="text/javascript">
+
+$('.lf-card').click(function(event) {
+    $('.lf-card').velocity({
+      scale  : ".7",
+    },{
+      duration : '300',
+      complete : function(){
+
+        $('.lf-card').velocity({
+          rotateX : "180deg",
+          scale   : "1",
+        },{
+          duration : '650',
+        })
+      },
+    });
+
+
+  });
+
+
+</script>
+
+</body>
+</html>
