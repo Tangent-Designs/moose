@@ -22,8 +22,12 @@
 
 <div class="wrapper">
       <section class="lf-wrap" style="z-index:1;">
-        <div class="lf-card"></div>
-        <!-- <div class="service-card"></div> -->
+        <div class="lf-card">
+          <img src="img/lf-ornament.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
+        </div>
+        <div class="service-card">
+          <img src="img/service-frame.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
+        </div>
       </section><!-- cd-section -->
       
       <section class="module parallax parallax-1" style="z-index:0;">
@@ -38,10 +42,11 @@
           </div>
       </section>
 
-      <section class="module content" id="eastlake-info-wrap">
+      <section class="module content" id="eastlake-info-wrap" style="padding:0;">
+      <img src="img/infobar-eastlake.svg" alt="" style="margin-top: -37px;">
         <div class="container">
-          <h2>Eastlake</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p>
+          <!-- <h2 style="color:white">Eastlake</h2>
+          <p style="color:white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus, repudiandae non dolorum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veritatis, facere aliquid itaque tempore consequatur nihil sint enim aliquam id saepe magnam totam repellat placeat a fugit nulla molestias voluptas.</p> -->
         </div>
       </section>
 
@@ -79,22 +84,51 @@
 <!-- analytics -->
 <script type="text/javascript">
 
-$('.lf-card').click(function(event) {
-    $('.lf-card').velocity({
-      scale  : ".7",
-    },{
-      duration : '300',
-      complete : function(){
+var counter = 2;
 
-        $('.lf-card').velocity({
-          rotateX : "180deg",
-          scale   : "1",
-        },{
-          duration : '650',
-        })
-      },
-    });
+$('.lf-card, .service-card').click(function(event) {
 
+    counter ++;
+
+    if (counter % 2 !== 0) {
+
+      ////////////////
+      $('.lf-card, .service-card').velocity({
+        scale  : ".8",
+      },{
+        duration : '300',
+        complete : function(){
+
+          $('.lf-card, .service-card').velocity({
+            rotateX : "180deg",
+            scale   : "1",
+          },{
+            duration : '650',
+          })
+        },
+      });
+      ////////////////
+
+    } else {
+
+      ////////////////
+      $('.lf-card, .service-card').velocity({
+        scale  : ".8",
+      },{
+        duration : '300',
+        complete : function(){
+
+          $('.lf-card, .service-card').velocity({
+            rotateX : "0deg",
+            scale   : "1",
+          },{
+            duration : '650',
+          })
+        },
+      });
+      ////////////////
+
+    };
 
   });
 
