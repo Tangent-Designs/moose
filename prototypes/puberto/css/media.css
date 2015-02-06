@@ -1,0 +1,9 @@
+@media only screen and (max-width:70em) { 
+  #eastlake-info-wrap{
+    display: block;
+  }
+  section.module.parallax {
+    height: 0;
+    background: none;
+  }
+}

@@ -1,6 +1,7 @@
 /* ============================================================
-  LOCATIONS VARIABLES
+  LANDING FRAME
 ============================================================ */
+
 .lf-wrap{
   height: 100vh;
   width: 100vw;
@@ -27,6 +28,16 @@
      -moz-transform-style: preserve-3d;
        -o-transform-style: preserve-3d;
           transform-style: preserve-3d;
+}
+
+/* ============================================================
+  LOCATIONS
+============================================================ */
+
+#eastlake-info-wrap{
+  display: none;
+  background-color: #8C0D24; 
+  color: white;
 }
 
 .service-card{
@@ -56,13 +67,23 @@
    transform: rotateX(180deg);
 }
 
-#eastlake-info-wrap{
-
+.ribbon{
+  position: absolute;
+  z-index: 1;
+  width: 500px;
+  height: 400px;
+  background-color: #26616F;
+  color: white;
+  right: 0;
+  margin-top: 100px;
+  border-radius: 10px;
 }
 
 
 
-
+/* ============================================================
+  CLOUDS
+============================================================ */
 #clouds{
   position: fixed;
   top: 30px;
@@ -176,75 +197,4 @@
   0% {margin-left: 1000px;}
   100% {margin-left: -1000px;}
 }
-
-/* ============================================================
-  SECTIONS
-============================================================ */
-section.module:last-child {
-  margin-bottom: 0;
-}
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px;
-}
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300;
-}
-section.module p:last-child {
-  margin-bottom: 0;
-}
-section.module.content {
-  padding: 40px 0;
-  position: relative;
-  z-index: 3;
-  background-color: #4d97b2;
-}
-section.module.parallax {
-  height: 750px;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-section.module.parallax h1 {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 48px;
-  line-height: 600px;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-section.module.parallax-1 {
-  background-image: url("../img/store-eastlake.svg");
-  background-color: #afd1dd
-}
-section.module.parallax-2 {
-  background-color: #8C0D24;
-}
-section.module.parallax-3 {
-  background-image: url("../img/store-eastlake.svg");
-}
-
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 20px;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
-  }
-}
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px;
-  }
-}
+s
