@@ -33,10 +33,25 @@
 /* ============================================================
   LOCATIONS
 ============================================================ */
+.mobile-service{
+  display: none;
+}
+
+.mobile-service p{
+  padding-bottom: 30px;
+}
+
+.mobile-service h1{
+  padding-top: 20px;
+}
 
 #eastlake-info-wrap{
-  display: none;
   background-color: #8C0D24; 
+  color: white;
+}
+
+#chula-vista-info-wrap{
+  background-color: #26616F; 
   color: white;
 }
 
@@ -79,6 +94,19 @@
   border-radius: 10px;
 }
 
+/* Big Triangle */
+svg#bigTriangleColor {
+  pointer-events: none;
+  background-color: #26616F;
+  /*margin-bottom: -6px;*/
+  display: none;
+}
+
+#bigTriangleColor path {
+  fill: #8C0D24;
+  stroke: #8C0D24;
+  stroke-width: 2;
+}
 
 
 /* ============================================================
@@ -98,7 +126,6 @@
   border-radius: 200px;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
-  
   position: relative; 
 }
 
@@ -197,4 +224,34 @@
   0% {margin-left: 1000px;}
   100% {margin-left: -1000px;}
 }
-s
+
+
+/* ============================================================
+  TOOLS
+============================================================ */
+.text-center{
+  text-align: center;
+}
+
+hr {
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+    opacity: .7;
+}
+hr:before { /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;    
+    border-style: solid;
+    border-color: white;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+    opacity: .7;
+
+}
+
+

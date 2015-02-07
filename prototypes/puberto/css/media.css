@@ -1,7 +1,11 @@
 @media only screen and (max-width:70em) { 
-  #eastlake-info-wrap{
+  .mobile-service{
     display: block;
   }
+  svg#bigTriangleColor{
+  	display: block;
+  }
+  
   section.module.parallax {
     height: 0;
     background: none;
