@@ -9,18 +9,32 @@ section.module:last-child {
 section.module h1 {
   margin-bottom: 0px;
   font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
   font-size: 56px;
 }
 
 section.module h2 {
   /*margin-top: 40px;*/
   font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
   font-size: 36px;
+  color: #fff;
 }
+
+section.module h3 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
+  font-size: 28px;
+  margin-top: 15px;
+  
+}
+
 section.module p {
   /*margin-bottom: 10px;*/
   font-size: 16px;
   font-weight: 300;
+  color: #E0E0E0;
 }
 section.module p:last-child {
   margin-bottom: 0;
@@ -70,7 +84,7 @@ section.module.parallax-3 {
     font-size: 42px;
   }
   section.module p {
-    font-size: 20px;
+    font-size: 16px;
   }
   section.module.parallax h1 {
     font-size: 96px;
