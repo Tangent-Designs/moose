@@ -17,24 +17,76 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/media.css">
 
+  <!-- mod -->
+  <link rel="stylesheet" href="mod/side-nav/css/style.css">
+
   <!-- js -->
   <script src="js/modernizr.js"></script>
 </head>
 
 <body>
 
+<nav id="cd-vertical-nav">
+    <ul>
+      <li>
+        <a href="#moose" data-number="1">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Moose</span>
+        </a>
+      </li>
+      <li>
+        <a href="#eastlake" data-number="2">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Eastlake</span>
+        </a>
+      </li>
+      <li>
+        <a href="#chula-vista" data-number="3">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Chula Vista</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section4" data-number="4">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Santee</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section5" data-number="5">
+          <span class="cd-dot"></span>
+          <span class="cd-label">SDSU</span>
+        </a>
+      </li>
+      <li>
+        <a href="#section6" data-number="6">
+          <span class="cd-dot"></span>
+          <span class="cd-label">Contact</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
 <div class="wrapper">
-      <section class="lf-wrap" style="z-index:1;">
+
+      <section class="lf-wrap" style="z-index:1;" id="moose">
         <div class="lf-card">
-          <img src="img/lf-ornament.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
+        <div class="service-button"></div>
+          <img src="img/lf/logo-moose.svg" alt="" id="logo-moose">
+          <img src="img/lf/logo-holder.svg" alt="" id="logo-holder">
         </div>
         <div class="service-card">
-          <img src="img/service-frame.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
+          <img src="img/lf/service-frame.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
         </div>
       </section><!-- cd-section -->
       
-      <section class="module parallax parallax-1" style="z-index:0;">
+
+
+      <!-- EASTLAKE FRAME -->
+
+      <section class="module parallax parallax-1" id="eastlake">
         <div class="container">
+
           <div class="ribbon-title">
             <h2 class="text-center">Eastlake</h2>
           </div>
@@ -59,11 +111,19 @@
           </div>
       </section>
 
-      <section class="module parallax parallax-2">
+
+
+      <!-- CHULA VISTA FRAME -->
+      
+      <section class="module parallax parallax-2" id="chula-vista">
         <div class="container">
           <!-- <h1>Rise</h1> -->
         </div>
       </section>
+
+
+
+      <!-- MOBILE FRAMES -->
 
       <section class="module content mobile-service" id="eastlake-info-wrap" style="padding:0;">
         <div class="container">
@@ -97,56 +157,12 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
 <script src="js/waypoints.min.js"></script>
+<script src="js/anim.js"></script>
+<script src="mod/side-nav/js/main.js"></script>
 
 <script type="text/javascript">
 
-var counter = 2;
 
-$('.lf-card, .service-card').click(function(event) {
-
-    counter ++;
-
-    if (counter % 2 !== 0) {
-
-      ////////////////
-      $('.lf-card, .service-card').velocity({
-        scale  : ".8",
-      },{
-        duration : '300',
-        complete : function(){
-
-          $('.lf-card, .service-card').velocity({
-            rotateX : "180deg",
-            scale   : "1",
-          },{
-            duration : '650',
-          })
-        },
-      });
-      ////////////////
-
-    } else {
-
-      ////////////////
-      $('.lf-card, .service-card').velocity({
-        scale  : ".8",
-      },{
-        duration : '300',
-        complete : function(){
-
-          $('.lf-card, .service-card').velocity({
-            rotateX : "0deg",
-            scale   : "1",
-          },{
-            duration : '650',
-          })
-        },
-      });
-      ////////////////
-
-    };
-
-  });
 
 
 </script>

@@ -4,6 +4,10 @@
     display: block;
   }
 
+  #clouds{
+  	display: none;
+  }
+
   svg#bigTriangleColor{
   	display: block;
   }
