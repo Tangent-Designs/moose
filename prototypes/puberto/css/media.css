@@ -17,6 +17,10 @@
     background: none;
   }
 
+  section.module{
+    margin-top: -39px;
+  }
+
   .ribbon-info{
   	display: none;
   }

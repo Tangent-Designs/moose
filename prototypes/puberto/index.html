@@ -7,7 +7,7 @@
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
   <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
 
-  <title>Moose : Puberto</title>
+  <title>Moose's Barber Shop</title>
 
   <!-- css -->
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/media.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <!-- <link rel="stylesheet" href="css/skeleton.css"> -->
 
   <!-- mod -->
   <link rel="stylesheet" href="mod/side-nav/css/style.css">
@@ -71,12 +73,18 @@
 
       <section class="lf-wrap" style="z-index:1;" id="moose">
         <div class="lf-card">
-        <div class="service-button"></div>
+          <div class="lf-button"></div>
           <img src="img/lf/logo-moose.svg" alt="" id="logo-moose">
           <img src="img/lf/logo-holder.svg" alt="" id="logo-holder">
         </div>
         <div class="service-card">
-          <img src="img/lf/service-frame.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
+          <div class="service-button"></div>
+          <div class="flipdiv">
+            <img src="img/service/banner-familyowned.svg" id="familyowned" alt="">
+            <div class="service-wrap">
+            <h1>lobster</h1>
+            </div>
+          </div>
         </div>
       </section><!-- cd-section -->
       
@@ -85,7 +93,7 @@
       <!-- EASTLAKE FRAME -->
 
       <section class="module parallax parallax-1" id="eastlake">
-        <div class="container">
+
 
           <div class="ribbon-title">
             <h2 class="text-center">Eastlake</h2>
@@ -101,7 +109,7 @@
             <p>Sat - Sun : 8am - 12pm </p>
           </div>
 
-        </div>
+
         <div id="clouds" style="z-index:0;">
             <div class="cloud x1"></div>
             <div class="cloud x2"></div>
@@ -161,7 +169,6 @@
 <script src="mod/side-nav/js/main.js"></script>
 
 <script type="text/javascript">
-
 
 
 

@@ -83,11 +83,11 @@ var logo_moose         = $('#logo-moose'),
     logo_moose.velocity({
       rotateZ : "360deg",
       top     : (lf_wrap_height - logo_moose_height) / 2,
-      scale   : 6,
+      scale   : 4.5,
     },{
       duration  : 1500,
       easing    : [40, 10],
-      delay     :1000,
+      delay     :500,
       complete  : function(){
           logo_holder.css('display', 'block');
       } // callback

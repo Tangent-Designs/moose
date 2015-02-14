@@ -2,18 +2,6 @@
   LANDING FRAME
 ============================================================ */
 
-/*dark blue
-#1c4752
-
-light blue
-#307b8c
-
-dark red
-#680a1b
-
-light red
-#b0102d*/
-
 .lf-wrap{
   height: 100vh;
   width: 100vw;
@@ -67,15 +55,14 @@ light red
   display: none;
 }
 
-.service-button{
+.lf-button{
   position: absolute;
   top: 15px;
   right: 15px;
-  bottom: 5px;
-  height: 100px;
+  height: 60px;
+  width: 60px;
   border-radius: 9999px;
   background-color: #26616F;
-  width: 100px;
   z-index: 3;
   transition: all ease-in-out .3s;
   -webkit-transition: all ease-in-out .3s;
@@ -83,12 +70,84 @@ light red
   -o-transition: all ease-in-out .3s;
 }
 
-.service-button:hover{
-  transform: scale(1.3);
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -o-transform: scale(1.3);
+.lf-button:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
+
+.service-button{
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  border-radius: 9999px;
+  background-color: #F2F2F2;
+  z-index: 4;
+  transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+}
+
+.service-button:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+/* ============================================================
+  SERVICE FRAME
+============================================================ */
+
+.service-card .flipdiv{
+  -webkit-transform: rotateX(180deg);
+   -moz-transform: rotateX(180deg);
+   -o-transform: rotateX(180deg);
+   transform: rotateX(180deg);
+}
+
+.decal-frame{
+  border: 1px solid white;
+}
+
+.service-card #familyowned{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 80vh;
+  height: 16vh;
+  width: 100%;
+}
+
+.service-card .service-wrap{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 40vh;
+  height: 35vh;
+  width: 80%;
+  background-image: url('../img/service/menu-frame.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  
+}
+
 
 /* ============================================================
   LOCATIONS
@@ -133,14 +192,12 @@ light red
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
               transform: rotateY( 180deg );
+      -webkit-transform: rotateX( 180deg );
+         -moz-transform: rotateX( 180deg );
+           -o-transform: rotateX( 180deg );
+              transform: rotateX( 180deg );
 }
 
-.service-card img{
-  -webkit-transform: rotateX(180deg);
-   -moz-transform: rotateX(180deg);
-   -o-transform: rotateX(180deg);
-   transform: rotateX(180deg);
-}
 
 .ribbon-title{
   position: absolute;
