@@ -1,3 +1,36 @@
+ h1 {
+  margin-bottom: 0px;
+  font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
+  font-size: 56px;
+}
+
+ h2 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
+  font-size: 36px;
+  color: #fff;
+}
+
+ h3 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
+  font-size: 28px;
+  margin-top: 15px;
+  color: white;
+}
+
+ h4 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', cursive;
+  text-shadow: -3px 2px #59473c;
+  font-size: 22px;
+  margin-top: 15px;
+  color: white;
+}
+
 /* ============================================================
   LANDING FRAME
 ============================================================ */
@@ -138,16 +171,37 @@
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 40vh;
-  height: 35vh;
-  width: 80%;
+  bottom: 25vh;
+  height: 50vh;
   background-image: url('../img/service/menu-frame.svg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
-
-  
 }
 
+.service-card .service-wrap h3 {
+  text-align: center;
+}
+
+
+.service-card .service-wrap .row div img{
+  margin-top: 15px;
+}
+
+.service-icon-fix{
+  margin-left: -40px !important;
+}
+
+.service-wrap .row{
+  padding: 20px;
+}
+
+.vert-align{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 /* ============================================================
   LOCATIONS

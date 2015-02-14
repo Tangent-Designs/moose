@@ -65,18 +65,14 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("../img/locations/moosesbarbershop-eastlake.svg");
-  /*background-color: #afd1dd;*/
+  background-image: url("../img/locations/barbershop-eastlake-big.svg");
+  background-color: #484c4d;
 }
 section.module.parallax-2 {
-  background-color: #8C0D24;
-  position: relative;
-  -webkit-box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
-  box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
+  background-image: url("../img/locations/barbershop-chula-vista-big.svg");
+  background-color: #4f5151;
 }
 section.module.parallax-3 {
-  background-image: url("../img/store-eastlake.svg");
 }
 
 @media all and (min-width: 600px) {
