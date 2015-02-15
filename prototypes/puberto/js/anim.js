@@ -55,7 +55,11 @@ $('.lf-card, .service-card').click(function(event) {
 //      Logo intro animation   //
 /////////////////////////////////
 
-var logo_moose         = $('#logo-moose'),
+  if ($(window).width() >= 820){  
+
+
+
+    var logo_moose     = $('#logo-moose'),
     logo_holder        = $('#logo-holder'),
     logo_holder_height = logo_holder.height(),
     logo_moose_height  = logo_moose.height(),
@@ -103,6 +107,12 @@ var logo_moose         = $('#logo-moose'),
       easing    : [40, 10],
       delay     :1000,
     });
+
+
+
+  }; // end if
+
+
 
 
 

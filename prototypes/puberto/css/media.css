@@ -1,4 +1,29 @@
 @media only screen and (max-width:70em) { 
+  
+  /*OTHER*/
+
+  .mobile{
+    display: block;
+  }
+  .desktop{
+    display: none;
+  }
+
+  #cd-vertical-nav{
+    display: none;
+  }
+
+  /*LOCATION FRAMES*/
+  .lf-card img{
+    width: 100vw;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  /*LOCATION FRAMES*/
 
   .mobile-service{
     display: block;
@@ -24,5 +49,33 @@
   .ribbon-title{
   	display: none;
   }
+  
 
-} /*end media query*/
+
+  /*SERVICE FRAME*/
+
+  .service-wrap .mobile h2{
+    font-size: 7vw;
+  }
+
+  .service-wrap .mobile img{
+    height: 12vw;
+  }
+
+  .service-wrap-mobile{
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  .service-icon-fix{
+    margin-left: -20px !important;
+  }
+
+  .service-card .service-wrap{
+    background-image:none;
+  }
+
+} /*end 70em*/
