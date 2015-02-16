@@ -107,6 +107,34 @@
   -o-transition: all ease-in-out .3s;
 }
 
+.lf-btn-wrap{
+  margin-top: 20px !important;
+}
+
+.lf-btn{
+  padding: 10px;
+  text-align: center;
+  border-radius: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.lf-btn h3{
+  margin: 0;
+}
+
+.service-btn{
+  background-color: #e4e4e5;
+}
+
+.logo-btn{
+  background-color: #b0102d;
+}
+
+.contact-btn{
+  background-color: #e4e4e5;
+}
+
 .lf-button:hover{
   transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -225,7 +253,7 @@ padding-top: 20px;
 }
 
 .mobile-service p{
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .mobile-service h1{
@@ -233,17 +261,17 @@ padding-top: 20px;
 }
 
 #eastlake-info-wrap{
-  background-color: #8C0D24; 
+  background-color: #b0102d; 
   color: white;
 }
 
 #chula-vista-info-wrap{
-  background-color: #26616F; 
+  background-color: #307b8c; 
   color: white;
 }
 
 .service-card{
-  background: #26616F;
+  background: #307b8c;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -320,16 +348,14 @@ padding-top: 20px;
 /* Big Triangle */
 svg#bigTriangleColor {
   pointer-events: none;
-  background-color: #26616F;
   /*margin-bottom: -6px;*/
   display: none;
 }
 
 #bigTriangleColor path {
-  fill: #8C0D24;
-  stroke: #8C0D24;
   stroke-width: 2;
 }
+
 
 /* ============================================================
   CLOUDS

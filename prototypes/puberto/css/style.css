@@ -65,14 +65,16 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("../img/locations/barbershop-eastlake-big.svg");
+  background-image: url("../img/locations/barbershop-eastlake.svg");
   background-color: #484c4d;
 }
 section.module.parallax-2 {
-  background-image: url("../img/locations/barbershop-chula-vista-big.svg");
-  background-color: #4f5151;
+  background-image: url("../img/locations/barbershop-chula-vista.svg");
+  background-color: #e8e8e8;
 }
 section.module.parallax-3 {
+  background-image: url("../img/locations/barbershop-santee.svg");
+  background-color: #484c4d;
 }
 
 @media all and (min-width: 600px) {
