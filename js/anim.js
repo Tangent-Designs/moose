@@ -105,8 +105,8 @@ $(document).ready(function() {
       });
 
     }; // end if
-    
-  }, 1000); //timeout
+
+  }, 0); //timeout
   
   
 
