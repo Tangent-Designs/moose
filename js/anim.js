@@ -53,59 +53,65 @@ $('.lf-button, .service-button, .service-wrap').click(function(event) {
 
 $(document).ready(function() {
 
+
+  setTimeout(function() {
+
+    if ($(window).width() >= 820){  
+
+      var logo_moose     = $('#logo-moose'),
+      logo_holder        = $('#logo-holder'),
+      logo_holder_height = logo_holder.height(),
+      logo_moose_height  = logo_moose.height(),
+      // viewport info
+      lf_wrap            = $('.lf-wrap'),
+      lf_wrap_width      = lf_wrap.width(),
+      lf_wrap_height     = lf_wrap.height(),
+      // top
+      logo_holder_top    = (lf_wrap_height - logo_holder_height) / 2,
+      logo_moose_top     = logo_holder_top + 11;
+      // width
+
+      // positioning and scaling defaults
+      logo_moose.css({
+        top       : logo_moose_top,
+      });
+
+      logo_holder.css({
+        top       : logo_holder_top,
+      });
+
+
+      logo_moose.velocity({
+        rotateZ : "360deg",
+        top     : (lf_wrap_height - logo_moose_height) / 2,
+        scale   : 3.1,
+      },{
+        duration  : 1500,
+        easing    : [40, 10],
+        delay     :500,
+        complete  : function(){
+            logo_holder.css('display', 'block');
+        } // callback
+
+      });
+
+      logo_moose.velocity({
+        rotateZ : "0deg",
+        top     : logo_moose_top,
+        scale   : 1,
+      },{
+        duration  : 1000,
+        easing    : [40, 10],
+      });
+
+    }; // end if
+    
+  }, 1000); //timeout
   
-  if ($(window).width() >= 820){  
-
-    var logo_moose     = $('#logo-moose'),
-    logo_holder        = $('#logo-holder'),
-    logo_holder_height = logo_holder.height(),
-    logo_moose_height  = logo_moose.height(),
-    // viewport info
-    lf_wrap            = $('.lf-wrap'),
-    lf_wrap_width      = lf_wrap.width(),
-    lf_wrap_height     = lf_wrap.height(),
-    // top
-    logo_holder_top    = (lf_wrap_height - logo_holder_height) / 2,
-    logo_moose_top     = logo_holder_top + 11;
-    // width
-
-    // positioning and scaling defaults
-    logo_moose.css({
-      top       : logo_moose_top,
-    });
-
-    logo_holder.css({
-      top       : logo_holder_top,
-    });
+  
 
 
-    logo_moose.velocity({
-      rotateZ : "360deg",
-      top     : (lf_wrap_height - logo_moose_height) / 2,
-      scale   : 3.1,
-    },{
-      duration  : 1500,
-      easing    : [40, 10],
-      delay     :500,
-      complete  : function(){
-          logo_holder.css('display', 'block');
-      } // callback
-
-    });
-
-    logo_moose.velocity({
-      rotateZ : "0deg",
-      top     : logo_moose_top,
-      scale   : 1,
-    },{
-      duration  : 1000,
-      easing    : [40, 10],
-    });
-
-  }; // end if
-
-
-});
+}); //doc ready
 
   
 
