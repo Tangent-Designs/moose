@@ -81,7 +81,7 @@ $('.lf-button, .service-button, .service-wrap').click(function(event) {
     logo_moose.velocity({
       rotateZ : "360deg",
       top     : (lf_wrap_height - logo_moose_height) / 2,
-      scale   : 3.2,
+      scale   : 3.1,
     },{
       duration  : 1500,
       easing    : [40, 10],
