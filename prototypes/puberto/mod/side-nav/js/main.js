@@ -1,5 +1,5 @@
 jQuery(document).ready(function($){
-	var contentSections = $('.cd-section'),
+	var contentSections = $('.nav-count'),
 		navigationItems = $('#cd-vertical-nav a');
 
 	updateNavigation();

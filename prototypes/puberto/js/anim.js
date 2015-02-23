@@ -4,13 +4,12 @@
 
 var counter = 2;
 
-$('.lf-card, .service-card').click(function(event) {
+$('.lf-button, .service-button, .service-wrap').click(function(event) {
 
     counter ++;
 
     if (counter % 2 !== 0) {
 
-      ////////////////
       $('.lf-card, .service-card').velocity({
         scale  : ".8",
       },{
@@ -25,11 +24,9 @@ $('.lf-card, .service-card').click(function(event) {
           })
         },
       });
-      ////////////////
 
     } else {
 
-      ////////////////
       $('.lf-card, .service-card').velocity({
         scale  : ".8",
       },{
@@ -44,7 +41,6 @@ $('.lf-card, .service-card').click(function(event) {
           })
         },
       });
-      ////////////////
 
     };
 
@@ -69,25 +65,23 @@ $('.lf-card, .service-card').click(function(event) {
     lf_wrap_height     = lf_wrap.height(),
     // top
     logo_holder_top    = (lf_wrap_height - logo_holder_height) / 2,
-    logo_moose_top     = logo_holder_top + 28;
+    logo_moose_top     = logo_holder_top + 11;
     // width
 
     // positioning and scaling defaults
     logo_moose.css({
       top       : logo_moose_top,
-      // width     : ,
     });
 
     logo_holder.css({
       top       : logo_holder_top,
-      // width     : ,
     });
 
 
     logo_moose.velocity({
       rotateZ : "360deg",
       top     : (lf_wrap_height - logo_moose_height) / 2,
-      scale   : 4.5,
+      scale   : 3.2,
     },{
       duration  : 1500,
       easing    : [40, 10],
@@ -105,7 +99,6 @@ $('.lf-card, .service-card').click(function(event) {
     },{
       duration  : 1000,
       easing    : [40, 10],
-      delay     :1000,
     });
 
 
@@ -115,8 +108,15 @@ $('.lf-card, .service-card').click(function(event) {
 
 
 
-
-
+/////////////////////////////////
+//      Scroll animation       //
+/////////////////////////////////
+var arrow = $('.lf-down-arrow');
+arrow.click(function() {
+    $('html, body').animate({
+        scrollTop: $("#eastlake").offset().top
+    }, 500);
+});
 
 
 

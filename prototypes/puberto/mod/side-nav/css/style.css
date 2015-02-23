@@ -162,7 +162,7 @@ Main components
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #F2F2F2;
+  background-color: red;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
