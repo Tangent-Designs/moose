@@ -51,9 +51,10 @@ $('.lf-button, .service-button, .service-wrap').click(function(event) {
 //      Logo intro animation   //
 /////////////////////////////////
 
+$(document).ready(function() {
+
+  
   if ($(window).width() >= 820){  
-
-
 
     var logo_moose     = $('#logo-moose'),
     logo_holder        = $('#logo-holder'),
@@ -101,9 +102,12 @@ $('.lf-button, .service-button, .service-wrap').click(function(event) {
       easing    : [40, 10],
     });
 
-
-
   }; // end if
+
+
+});
+
+  
 
 
 
