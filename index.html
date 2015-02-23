@@ -5,17 +5,23 @@
   <!-- title and meta -->
   <meta charset="utf-8">
   <meta content="width=device-width,initial-scale=1.0" name="viewport">
-  <meta content="description" name="In this tutorial, we take a look at a beautiful parallax scrolling effect in the simplest of ways, with stationary backgrounds and scrolling content.">
+  <meta content="description" name="Moose's Barber Shop">
 
-  <title>Moose : Puberto</title>
+  <title>Moose's Barber Shop</title>
 
   <!-- css -->
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/media.css">
+  <!-- <link rel="stylesheet" href="css/media.css"> -->
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- mod -->
+  <link rel="stylesheet" href="mod/side-nav/css/style.css" media="(min-width: 70em)">
+  <link rel="stylesheet" href="css/desktop.css" media="(min-width: 70em)">
+  <link rel="stylesheet" href="css/mobile.css" media="(max-width: 70em)">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
   <!-- js -->
   <script src="js/modernizr.js"></script>
@@ -23,70 +29,362 @@
 
 <body>
 
+<nav id="cd-vertical-nav">
+  <ul>
+    <li>
+      <a href="#moose" data-number="1">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Moose</span>
+      </a>
+    </li>
+    <li>
+      <a href="#eastlake" data-number="2">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Eastlake</span>
+      </a>
+    </li>
+    <li>
+      <a href="#chula-vista" data-number="3">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Chula Vista</span>
+      </a>
+    </li>
+    <li>
+      <a href="#section4" data-number="4">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Santee</span>
+      </a>
+    </li>
+    <li>
+      <a href="#section5" data-number="5">
+        <span class="cd-dot"></span>
+        <span class="cd-label">SDSU</span>
+      </a>
+    </li>
+    <li>
+      <a href="#section6" data-number="6">
+        <span class="cd-dot"></span>
+        <span class="cd-label">Contact</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
 <div class="wrapper">
-      <section class="lf-wrap" style="z-index:1;">
-        <div class="lf-card">
-          <img src="img/lf-ornament.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
-        </div>
-        <div class="service-card">
-          <img src="img/service-frame.svg" alt="" height="100%" style="display: block; margin-left: auto;margin-right: auto">
-        </div>
-      </section><!-- cd-section -->
+
+      <!-- +++++++++++++  -->
+      <!--    CLOUDS      -->
+      <!-- +++++++++++++  -->
+      <div id="clouds" style="z-index:0;">
+        <div class="cloud x1"></div>
+        <div class="cloud x2"></div>
+        <div class="cloud x3"></div>
+        <div class="cloud x4"></div>
+        <div class="cloud x5"></div>
+      </div>
+
       
-      <section class="module parallax parallax-1" style="z-index:0;">
-        <div class="container">
+      <!-- ++++++++++++++++  -->
+      <!-- CHULA VISTA FRAME -->
+      <!-- ++++++++++++++++  -->
+      <section class="lf-wrap nav-count" id="moose">
+
+      <!-- landing frame card -->
+        <div class="lf-card">
+          <img src="img/lf/button-services.svg" alt="" class="lf-button">
+          <img src="img/lf/logo-moose.svg" alt="" id="logo-moose" class="desktop">
+          <img src="img/lf/logo-holder.svg" alt="" id="logo-holder" class="desktop">
+          <img src="img/lf/arrow-down.svg" alt="" class="lf-down-arrow">
+          <img src="img/lf/logo-holder-full.svg" alt="" class="mobile" id="mobile-lf-img">
+        </div>
+
+      <!-- service frame card -->
+        <div class="service-card">
+          <div class="flipdiv">
+            <img src="img/lf/arrow-down.svg" alt="" class="lf-down-arrow">
+            <div class="service-wrap">
+
+            <!-- DESKTOP -->
+              <div class="container vert-align desktop">
+              <br><br><br>
+                <div class="row">
+                  <div class="four columns">
+                    <div class="ten columns">
+                      <h3>The Moose Special</h3>
+                      <p>Basic men's haircut</p>
+                    </div>
+                    <div class="two columns service-icon-fix">
+                      <img src="img/service/icon-hair.svg" alt="" >
+                    </div> 
+                  </div>
+                  <div class="four columns">
+                    <div class="ten columns">
+                      <h3>Lil Moose</h3>
+                      <p>Basic haircut for boys 10 <br>and under</p>
+                    </div>
+                    <div class="two columns service-icon-fix service-icon-fix">
+                      <img src="img/service/icon-hair.svg" alt="" >
+                    </div> 
+                  </div><div class="four columns">
+                    <div class="ten columns">
+                      <h3>The Moose Daddy</h3>
+                      <p>Men's haircut, shampoo and <br>hot towel treatment</p>
+                    </div>
+                    <div class="two columns">
+                      <img src="img/service/icon-hair.svg" alt="" >
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="four columns">
+                    <div class="ten columns">
+                      <h3>The Shay Moose</h3>
+                      <p>Men's haircut, shampoo, hot towel treatment and straight razor shave</p>
+                    </div>
+                    <div class="two columns service-icon-fix">
+                      <img src="img/service/icon-full.svg" alt="" >
+                    </div> 
+                  </div>
+                  <div class="four columns">
+                    <div class="ten columns">
+                      <h3>Beard Trim</h3>
+                      <p>Basic beard trim</p>
+                    </div>
+                    <div class="two columns service-icon-fix">
+                      <img src="img/service/icon-beard.svg" alt="" >
+                    </div> 
+                  </div><div class="four columns">
+                    <div class="ten columns">
+                      <h3>The Spruce Moose</h3>
+                      <p>Old fashioned straight razor shave</p>
+                    </div>
+                    <div class="two columns">
+                      <img src="img/service/icon-beard.svg" alt="" >
+                    </div> 
+                  </div>
+                </div>
+
+                <div class="row margin-neg-fix">
+                  
+                  <div class="four offset-by-four columns">
+                    <div class="ten columns">
+                      <h3>Custom Cut</h3>
+                      <p>Ask your barber for a <br> custom quote</p>
+                    </div>
+                    <div class="two columns service-icon-fix">
+                      <img src="img/service/icon-scissors.svg" alt="" >
+                    </div> 
+                  </div>
+
+                </div>
+              </div>
+              
+              <!-- PHONE SERVICES -->
+              <div class="container mobile service-wrap-mobile">
+
+                <div class="row">
+                    <h1 style="color: white; text-align:center">Services</h1>
+                    <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
+                    <h2 style="text-align:left">
+                      The Moose Special 
+                      <img src="img/service/icon-hair.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+                <div class="row">
+                    <h2 style="text-align:left">
+                      Lil' Moose 
+                      <img src="img/service/icon-hair.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+                <div class="row">
+                    <h2 style="text-align:left">
+                      The Moose Daddy
+                      <img src="img/service/icon-hair.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+                <div class="row">
+                    <h2 style="text-align:left">
+                      The Shay Moose 
+                      <img src="img/service/icon-full.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+                <div class="row">
+                    <h2 style="text-align:left">
+                      Beard Trim
+                      <img src="img/service/icon-beard.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+                <div class="row">
+                    <h2 style="text-align:left">
+                      The Spruce Moose 
+                      <img src="img/service/icon-beard.svg" alt="" style="float:right">
+                    </h2>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <img src="img/lf/button-moose.svg" alt="" class="service-button">
+        </div>
+      </section>
+
+
+
+      <!-- +++++++++++++  -->
+      <!-- EASTLAKE FRAME -->
+      <!-- +++++++++++++  -->
+      <section class="module parallax parallax-1 nav-count" id="eastlake">
+
+
           <div class="ribbon-title">
             <h2 class="text-center">Eastlake</h2>
           </div>
 
           <div class="ribbon-info">
             <h3>Contact</h3>
-            <p>1234 Dark Ally Rape Lupe , CA 91913</p>
-            <p>619 LUPE JUICE</p>
-            <p>email@lupejuice.com</p>
+            <p>1745 Eastlake Pkwy St. 101 Chula Vista, CA 91915</p>
+            <p>(619) 271-4026</p>
             <h3>Hours</h3>
-            <p>Mon - Fri : 9am - 10pm </p>
-            <p>Sat - Sun : 8am - 12pm </p>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
           </div>
 
-        </div>
-        <div id="clouds" style="z-index:0;">
-            <div class="cloud x1"></div>
-            <div class="cloud x2"></div>
-            <div class="cloud x3"></div>
-            <div class="cloud x4"></div>
-            <div class="cloud x5"></div>
+
+      </section>
+
+
+      <!-- ++++++++++++++++  -->
+      <!-- CHULA VISTA FRAME -->
+      <!-- ++++++++++++++++  -->
+      <section class="module parallax parallax-2 nav-count" id="chula-vista">
+
+        <div class="ribbon-title">
+            <h2 class="text-center">Chula Vista</h2>
           </div>
+
+          <div class="ribbon-info">
+            <h3>Contact</h3>
+            <p>1020 Tierra Del Rey Chula Vista, CA 91910</p>
+            <p>(619) 271-7529</p>
+            <h3>Hours</h3>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
+          </div>
+
+
       </section>
 
-      <section class="module parallax parallax-2">
-        <div class="container">
-          <!-- <h1>Rise</h1> -->
-        </div>
+      <!-- ++++++++++++ -->
+      <!-- SANTEE FRAME -->
+      <!-- ++++++++++++ -->
+      <section class="module parallax parallax-3 nav-count" id="eastlake">
+
+
+          <div class="ribbon-title">
+            <h2 class="text-center">Santee</h2>
+          </div>
+
+          <div class="ribbon-info">
+            <h3>Contact</h3>
+            <p>9824 Mission Gorge Rd Santee, CA 92071</p>
+            <p>(619) 459-1280</p>
+            <h3>Hours</h3>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
+          </div>
+
+
       </section>
 
+
+
+
+      <!-- +++++++++++++ -->
+      <!-- MOBILE FRAMES -->
+      <!-- +++++++++++++ -->
+
+      <!-- eastlake -->
       <section class="module content mobile-service" id="eastlake-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">Eastlake</h1>
-          <hr>
+          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
           <h2 class="">Contact</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus.</p>
+            <p>1745 Eastlake Pkwy St. 101 Chula Vista, CA 91915</p>
+            <p>(619) 271-4026</p>
           <h2 class="">Hours</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus.</p>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
+            <br>
         </div>
       </section>
-      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
-        <path d="M0 0 L50 100 L100 0 Z" />
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#307b8c;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #b0102d; stroke: #b0102d;"/>
       </svg>
-
+      
+      <!-- chula vista -->
       <section class="module content mobile-service" id="chula-vista-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">Chula Vista</h1>
-          <hr>
+          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
           <h2 class="">Contact</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus.</p>
+            <p>1020 Tierra Del Rey Chula Vista, CA 91910</p>
+            <p>(619) 271-7529</p>
           <h2 class="">Hours</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil consequuntur, nesciunt dicta, esse rem ducimus itaque quis. Adipisci ullam nam qui illum debitis sit ad in delectus.</p>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
+            <br>
+        </div>
+      </section>
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#b0102d;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #307b8c; stroke: #307b8c;"/>
+      </svg>
+      
+      <!-- santee -->
+      <section class="module content mobile-service" id="eastlake-info-wrap" style="padding:0;">
+        <div class="container">
+          <h1 class="text-center">Santee</h1>
+          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
+          <h2 class="">Contact</h2>
+          <p>9824 Mission Gorge Rd Santee, CA 92071</p>
+          <h2 class="">Hours</h2>
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
+            <br>
+        </div>
+      </section>
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#307b8c;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #b0102d; stroke: #b0102d;"/>
+      </svg>
+      
+
+      <!-- ++++++++++++++ -->
+      <!-- CONTACT FRAMES -->
+      <!-- ++++++++++++++ -->
+      <section class="module content" id="chula-vista-info-wrap" style="padding:0;">
+        <div class="container">
+          <h1 class="text-center">Contact Moose</h1>
+          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
+          <br>
+          <div class="container">
+            <form>
+
+              <div class="row">
+                <div class="tweleve columns">
+                  <input class="u-full-width" type="email" placeholder="email@gmail.com" id="exampleEmailInput">
+                </div>
+              </div>
+
+              <textarea class="u-full-width" placeholder="Hey Moose Daddy" id="exampleMessage"></textarea>
+
+              <div class="row">
+                <div class="tweleve columns">
+                  <input class="button-primary" type="submit" value="Submit">
+                </div>
+              </div>
+
+            </form>
+          </div>
         </div>
       </section>
 
@@ -97,59 +395,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
 <script src="js/waypoints.min.js"></script>
+<script src="js/anim.js"></script>
+<script src="mod/side-nav/js/main.js"></script>
 
-<script type="text/javascript">
-
-var counter = 2;
-
-$('.lf-card, .service-card').click(function(event) {
-
-    counter ++;
-
-    if (counter % 2 !== 0) {
-
-      ////////////////
-      $('.lf-card, .service-card').velocity({
-        scale  : ".8",
-      },{
-        duration : '300',
-        complete : function(){
-
-          $('.lf-card, .service-card').velocity({
-            rotateX : "180deg",
-            scale   : "1",
-          },{
-            duration : '650',
-          })
-        },
-      });
-      ////////////////
-
-    } else {
-
-      ////////////////
-      $('.lf-card, .service-card').velocity({
-        scale  : ".8",
-      },{
-        duration : '300',
-        complete : function(){
-
-          $('.lf-card, .service-card').velocity({
-            rotateX : "0deg",
-            scale   : "1",
-          },{
-            duration : '650',
-          })
-        },
-      });
-      ////////////////
-
-    };
-
-  });
-
-
-</script>
 
 </body>
 </html>

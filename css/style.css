@@ -6,34 +6,12 @@ section.module:last-child {
   margin-bottom: 0;
 }
 
-section.module h1 {
-  margin-bottom: 0px;
-  font-family: 'Lobster', cursive;
-  text-shadow: -3px 2px #59473c;
-  font-size: 56px;
-}
 
-section.module h2 {
-  /*margin-top: 40px;*/
-  font-family: 'Lobster', cursive;
-  text-shadow: -3px 2px #59473c;
-  font-size: 36px;
-  color: #fff;
-}
-
-section.module h3 {
-  /*margin-top: 40px;*/
-  font-family: 'Lobster', cursive;
-  text-shadow: -3px 2px #59473c;
-  font-size: 28px;
-  margin-top: 15px;
-  
-}
 
 section.module p {
   /*margin-bottom: 10px;*/
-  font-size: 16px;
-  font-weight: 300;
+  /*font-size: 16px;*/
+  /*font-weight: 300;*/
   color: #E0E0E0;
 }
 section.module p:last-child {
@@ -65,31 +43,18 @@ section.module.parallax h1 {
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 section.module.parallax-1 {
-  background-image: url("../img/store-eastlake.svg");
-  background-color: #afd1dd
+  background-image: url("../img/locations/barbershop-eastlake.svg");
+  background-color: #484c4d;
 }
 section.module.parallax-2 {
-  background-color: #8C0D24;
-  position: relative;
-  -webkit-box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
-  -moz-box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
-  box-shadow: 1px -2px 24px 3px rgba(0,0,0,0.75);
+  background-image: url("../img/locations/barbershop-chula-vista.svg");
+  background-color: #e8e8e8;
 }
 section.module.parallax-3 {
-  background-image: url("../img/store-eastlake.svg");
+  background-image: url("../img/locations/barbershop-santee.svg");
+  background-color: #484c4d;
 }
 
-@media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px;
-  }
-  section.module p {
-    font-size: 16px;
-  }
-  section.module.parallax h1 {
-    font-size: 96px;
-  }
-}
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
     font-size: 160px;

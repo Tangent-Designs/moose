@@ -1,36 +1,92 @@
+ h1 {
+  margin-bottom: 0px;
+  font-family: 'Lobster', serif !important;
+  text-shadow: -3px 2px #59473c !important;
+  font-size: 56px !important;
+}
+
+ h2 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', serif !important;
+  text-shadow: -3px 2px #59473c !important;
+  font-size: 36px !important;
+  color: #fff;
+}
+
+ h3 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', serif !important;
+  text-shadow: -3px 2px #59473c !important;
+  font-size: 28px !important;
+  margin-top: 15px;
+  color: white;
+}
+
+ h4 {
+  /*margin-top: 40px;*/
+  font-family: 'Lobster', serif !important;
+  text-shadow: -3px 2px #59473c !important;
+  font-size: 22px !important;
+  margin-top: 15px;
+  color: white;
+}
+
+p{
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+}
+
+
+.mobile{
+  display: none;
+}
+
+.nav-counter{
+  min-height: 100%;
+  position: relative;
+}
+
+.text-center{
+  text-align: center;
+}
 /* ============================================================
   LANDING FRAME
 ============================================================ */
 
-/*dark blue
-#1c4752
-
-light blue
-#307b8c
-
-dark red
-#680a1b
-
-light red
-#b0102d*/
-
 .lf-wrap{
   height: 100vh;
   width: 100vw;
+  /*z-index: 1;*/
   position: relative;
   z-index: 2;
-  background-image: url("../img/landing-frame-bg.svg");
+  background-image: url("../img/lf/landing-frame-bg.svg");
+  background-repeat:no-repeat;
+  background-size: cover;
   -webkit-perspective: 1800px;
   -moz-perspective: 1800px;
   -o-perspective: 1800px;
   perspective: 1800px;
+  -webkit-box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 4px 39px 0px rgba(0,0,0,0.75);
+
+}
+
+.lf-card img{
+  -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+  backface-visibility: hidden; /* Chrome, Safari, Opera */
+
 }
 
 .lf-card{
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: #777;
+  background-image: url("../img/lf/bg-pattern.svg");
+  background-repeat:no-repeat;
+  background-size: cover;
   position: absolute;
   -webkit-backface-visibility: hidden;
          -moz-backface-visibility: hidden;
@@ -42,15 +98,176 @@ light red
           transform-style: preserve-3d;
 }
 
+
+
+.lf-button{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+  z-index: 3;
+  transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+}
+
+
+.lf-button:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+.service-button{
+  position: absolute;
+  cursor: pointer;
+  bottom: 15px;
+  right: 15px;
+  height: 60px;
+  width: 60px;
+  z-index: 4;
+  transition: all ease-in-out .3s;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+}
+
+.service-button:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+.lf-down-arrow {
+    -webkit-animation: pulsate 2s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    opacity: 0.0
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden; /* Chrome, Safari, Opera */
+
+}
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+
+/* ============================================================
+  SERVICE FRAME
+============================================================ */
+
+.service-card .flipdiv{
+  -webkit-transform: rotateX(180deg);
+   -moz-transform: rotateX(180deg);
+   -o-transform: rotateX(180deg);
+   transform: rotateX(180deg);
+}
+
+.decal-frame{
+  border: 1px solid white;
+}
+
+.service-card #familyowned{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 80vh;
+  height: 16vh;
+  width: 100%;
+}
+
+.service-card .service-wrap{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 25vh;
+  height: 75vh;
+  background-image: url('../img/service/menu-frame.svg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.service-card .service-wrap h3 {
+  text-align: left;
+}
+
+
+.service-card .service-wrap .row div img{
+  margin-top: 15px;
+}
+
+.service-icon-fix{
+  margin-left: -20px !important;
+}
+
+.service-wrap .row{
+  /*padding-left: 20px;*/
+  /*padding-right: 20px;*/
+  padding-top: 20px;
+}
+
+.vert-align{
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bar-mustache{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.lf-down-arrow{
+  position: absolute;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 20px;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .3s;
+  -moz-transition: all ease-in-out .3s;
+  -o-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.lf-down-arrow:hover{
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  transform:scale(1.5);
+}
+
+.margin-neg-fix{
+  margin-top: -20px;
+}
 /* ============================================================
   LOCATIONS
 ============================================================ */
-.mobile-service{
-  display: none;
-}
 
 .mobile-service p{
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .mobile-service h1{
@@ -58,17 +275,17 @@ light red
 }
 
 #eastlake-info-wrap{
-  background-color: #8C0D24; 
+  background-color: #b0102d; 
   color: white;
 }
 
 #chula-vista-info-wrap{
-  background-color: #26616F; 
+  background-color: #307b8c; 
   color: white;
 }
 
 .service-card{
-  background: #26616F;
+  background: #307b8c;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -85,222 +302,42 @@ light red
          -moz-transform: rotateY( 180deg );
            -o-transform: rotateY( 180deg );
               transform: rotateY( 180deg );
+      -webkit-transform: rotateX( 180deg );
+         -moz-transform: rotateX( 180deg );
+           -o-transform: rotateX( 180deg );
+              transform: rotateX( 180deg );
 }
 
-.service-card img{
-  -webkit-transform: rotateX(180deg);
-   -moz-transform: rotateX(180deg);
-   -o-transform: rotateX(180deg);
-   transform: rotateX(180deg);
-}
 
-.ribbon-title{
-  position: absolute;
-  z-index: 1;
-  width: 423px;
-  height: 70px;
+
+
+
+/* ============================================================
+  CONTACT FRAME
+============================================================ */
+
+.contact-frame{
   background-color: #b0102d;
-  color: white;
-  right: 0;
-  margin-top: 10vw;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  -webkit-box-shadow: 0px -4px 39px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px -4px 39px 0px rgba(0,0,0,0.75);
+box-shadow: 0px -4px 39px 0px rgba(0,0,0,0.75);
+
 }
 
-.ribbon-title:before {
-    content: "";
-    width: 3em;
-    /* bottom: -.5em; */
-    position: absolute;
-    display: block;
-    border: 35px solid #b0102d;
-    /* box-shadow: 0px 1px 0px rgba(0,0,0,0.4); */
-    z-index: -2;
-    left: -2.55em;
-    border-right-width: -0.25em;
-    border-left-color: transparent;
-  }
-
-.ribbon-info{
-  position: absolute;
-  z-index: 1;
-  width: 300px;
-  height: 260px;
-  background-color: #307b8c;
-  color: white;
-  right: 0;
-  margin-top: 18vw;
-}
-
-.ribbon-info:before {
-    content: "";
-    width: 3em;
-    /* bottom: -.5em; */
-    position: absolute;
-    display: block;
-    border: 130px solid #307b8c;
-    /* box-shadow: 0px 1px 0px rgba(0,0,0,0.4); */
-    z-index: -2;
-    left: -11.35em;
-    border-right-width: -0.25em;
-    border-left-color: transparent;
-  }
-
-/* Big Triangle */
-svg#bigTriangleColor {
-  pointer-events: none;
-  background-color: #26616F;
-  /*margin-bottom: -6px;*/
-  display: none;
-}
-
-#bigTriangleColor path {
-  fill: #8C0D24;
-  stroke: #8C0D24;
-  stroke-width: 2;
-}
-
-/* ============================================================
-  CLOUDS
-============================================================ */
-#clouds{
-  position: fixed;
-  top: 30px;
-  z-index: 0;
-}
-
-/*Time to finalise the cloud shape*/
-.cloud {
-  width: 200px; height: 60px;
-  background: #fff;
-  z-index: 0;
-  border-radius: 200px;
-  -moz-border-radius: 200px;
-  -webkit-border-radius: 200px;
-  position: relative; 
-}
-
-.cloud:before, .cloud:after {
-  content: '';
-  position: absolute; 
-  background: #fff;
-  width: 100px; height: 80px;
-  position: absolute; top: -15px; left: 10px;
-  
-  border-radius: 100px;
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  
-  -webkit-transform: rotate(30deg);
-  transform: rotate(30deg);
-  -moz-transform: rotate(30deg);
-}
-
-.cloud:after {
-  width: 120px; height: 120px;
-  top: -55px; left: auto; right: 15px;
-}
-
-/*Time to animate*/
-.x1 {
-  -webkit-animation: moveclouds 15s linear infinite;
-  -moz-animation: moveclouds 15s linear infinite;
-  -o-animation: moveclouds 15s linear infinite;
-}
-
-/*variable speed, opacity, and position of clouds for realistic effect*/
-.x2 {
-  left: 200px;
-  
-  -webkit-transform: scale(0.6);
-  -moz-transform: scale(0.6);
-  transform: scale(0.6);
-  opacity: 0.6; /*opacity proportional to the size*/
-  
-  /*Speed will also be proportional to the size and opacity*/
-  /*More the speed. Less the time in 's' = seconds*/
-  -webkit-animation: moveclouds 25s linear infinite;
-  -moz-animation: moveclouds 25s linear infinite;
-  -o-animation: moveclouds 25s linear infinite;
-}
-
-.x3 {
-  left: -250px; top: -200px;
-  
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.8; /*opacity proportional to the size*/
-  
-  -webkit-animation: moveclouds 20s linear infinite;
-  -moz-animation: moveclouds 20s linear infinite;
-  -o-animation: moveclouds 20s linear infinite;
-}
-
-.x4 {
-  left: 470px; top: -250px;
-  
-  -webkit-transform: scale(0.75);
-  -moz-transform: scale(0.75);
-  transform: scale(0.75);
-  opacity: 0.75; /*opacity proportional to the size*/
-  
-  -webkit-animation: moveclouds 18s linear infinite;
-  -moz-animation: moveclouds 18s linear infinite;
-  -o-animation: moveclouds 18s linear infinite;
-}
-
-.x5 {
-  left: -150px; top: -150px;
-  
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  transform: scale(0.8);
-  opacity: 0.8; /*opacity proportional to the size*/
-  
-  -webkit-animation: moveclouds 20s linear infinite;
-  -moz-animation: moveclouds 20s linear infinite;
-  -o-animation: moveclouds 20s linear infinite;
-}
-
-@-webkit-keyframes moveclouds {
-  0% {margin-left: 1000px;}
-  100% {margin-left: -1000px;}
-}
-@-moz-keyframes moveclouds {
-  0% {margin-left: 1000px;}
-  100% {margin-left: -1000px;}
-}
-@-o-keyframes moveclouds {
-  0% {margin-left: 1000px;}
-  100% {margin-left: -1000px;}
-}
-
-
-/* ============================================================
-  TOOLS
-============================================================ */
-.text-center{
+.contact-frame h1{
   text-align: center;
+  color: white;
+  padding-top: 10px;
 }
 
-hr {
-    height: 30px;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px 0 0 0;
-    border-radius: 20px;
-    opacity: .7;
+.contact-frame img{
+  width: 20%;
 }
-hr:before { /* Not really supposed to work, but does */
-    display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;    
-    border-style: solid;
-    border-color: white;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-    opacity: .7;
 
-}
+
+
 
 

@@ -1,6 +1,7 @@
-@media only screen and (max-width:70em) { 
-  
-  /*OTHER*/
+/* ============================================================
+  OTHER TOOLS
+============================================================ */
+
 
   .mobile{
     display: block;
@@ -13,7 +14,10 @@
     display: none;
   }
 
-  /*LOCATION FRAMES*/
+/* ============================================================
+  LF FRAMES
+============================================================ */
+
   #mobile-lf-img{
     width: 100vw;
     position: relative;
@@ -25,7 +29,10 @@
     transform: translateY(-50%);
   }
 
-  /*SERVICE FRAMES*/
+
+/* ============================================================
+  LOCATION FRAMES
+============================================================ */
 
   .mobile-service{
     display: block;
@@ -39,10 +46,6 @@
   	display: block;
   }
   
-  section.module.parallax {
-    height: 0;
-    background: none;
-  }
 
   .ribbon-info{
   	display: none;
@@ -76,4 +79,30 @@
     background-image:none;
   }
 
-} /*end 70em*/
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 16px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+
+ section.module.parallax {
+  height: 0;
+  background: none;
+  }
+  
+  section.module.parallax-1 {
+    background-image: none;
+    background-color: none;
+  }
+  section.module.parallax-2 {
+    background-image: none;
+    background-color: none;
+  }
+  section.module.parallax-3 {
+    background-image: none;
+    background-color: none;
+  }
