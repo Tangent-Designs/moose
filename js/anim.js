@@ -51,7 +51,7 @@ $('.lf-button, .service-button, .service-wrap').click(function(event) {
 //      Logo intro animation   //
 /////////////////////////////////
 
-$(document).ready(function() {
+$(window).load(function() {
 
 
   setTimeout(function() {
