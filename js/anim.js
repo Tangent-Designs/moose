@@ -4,7 +4,7 @@
 
 var counter = 2;
 
-$('.lf-button, .service-button, .service-wrap').click(function(event) {
+$('.lf-button, .service-button').click(function(event) {
 
     counter ++;
 
