@@ -98,6 +98,7 @@
 
   .service-wrap-mobile{
     position: relative;
+    z-index: 3;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
