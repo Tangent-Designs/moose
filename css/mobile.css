@@ -15,6 +15,39 @@
   }
 
 /* ============================================================
+  SERVICE FRAMES
+============================================================ */
+.service-light-bg{
+  background-color: #4c909b;
+  vertical-align: center;
+}
+
+.service-dark-bg{
+  background-color: #4c909b;
+}
+
+.service-accordian .row{
+ padding-top: 29px;
+  padding-bottom: 10px;
+}
+
+.service-accordian h2{
+  margin-top: -12px;
+  color: #fff;
+  margin-bottom: 0px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.service-accordian p{
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  padding-top: 7px;
+}
+
+
+/* ============================================================
   LF FRAMES
 ============================================================ */
 

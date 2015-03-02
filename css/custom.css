@@ -209,17 +209,18 @@ p{
 }
 
 .service-card .service-wrap{
-  position: absolute;
+  /*position: absolute;*/
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
   bottom: 0vh;
   height: 100vh;
-  /*background-image: url('../img/service/menu-frame.svg');*/
-  background-image: url('../img/service/frame-full.svg');
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+   background: url('../img/service/frame-full.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .service-card .service-wrap h3 {
@@ -276,6 +277,20 @@ p{
   -moz-transform:scale(1.5);
   -o-transform:scale(1.5);
   transform:scale(1.5);
+}
+
+.scroll-txt{
+  position: absolute;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50px;
+  text-shadow: none;
+  color: #0d0d0d;
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
 }
 
 .margin-neg-fix{

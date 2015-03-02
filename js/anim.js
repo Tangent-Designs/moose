@@ -108,19 +108,13 @@ $(window).load(function() {
 
   }, 0); //timeout
   
-  
-
-
 }); //doc ready
 
   
-
-
-
-
 /////////////////////////////////
-//      Scroll animation       //
+//      Service Accordian      //
 /////////////////////////////////
+
 var arrow = $('.lf-down-arrow');
 arrow.click(function() {
     $('html, body').animate({
@@ -129,8 +123,18 @@ arrow.click(function() {
 });
 
 
+/////////////////////////////////
+//      Scroll animation       //
+/////////////////////////////////
 
+var h2 = $('.service-accordian h2');
 
+  h2.next().hide();
+
+  h2.click(function(event) {
+    h2.next().velocity("slideUp", { duration: 200 });
+    $(this).next().velocity("slideDown", { duration: 200 });
+  });
 
 
 
