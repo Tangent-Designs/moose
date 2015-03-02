@@ -319,10 +319,10 @@ p{
 }
 
 .service-card{
-  background: #307b8c;
+  /*background: #307b8c;*/
   width: 100%;
   height: 100%;
-  z-index: 1;
+  /*z-index: 1;*/
   position: absolute;
  /* -webkit-backface-visibility: hidden;
          -moz-backface-visibility: hidden;
