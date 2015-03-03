@@ -27,15 +27,33 @@
   display: none;
 }
 
+.full-width-img{
+  width: 100vw;
+}
+
+.procuts-logos{
+  position:absolute;
+  top:0
+}
+
+/* ============================================================
+  LOCATIONS FRAME
+============================================================ */
+
 .ribbon-title{
   position: absolute;
   z-index: 1;
   width: 423px;
-  height: 70px;
+  height: 90px;
   background-color: #b0102d;
   color: white;
   right: 0;
   margin-top: 10vw;
+}
+
+.ribbon-title p{
+  text-align: center;
+  margin-top: -10px;
 }
 
 .ribbon-title:before {
@@ -44,10 +62,10 @@
     /* bottom: -.5em; */
     position: absolute;
     display: block;
-    border: 35px solid #b0102d;
+    border: 45px solid #b0102d;
     /* box-shadow: 0px 1px 0px rgba(0,0,0,0.4); */
     z-index: -2;
-    left: -2.55em;
+    left: -3.55em;
     border-right-width: -0.25em;
     border-left-color: transparent;
   }
@@ -55,12 +73,18 @@
 .ribbon-info{
   position: absolute;
   z-index: 1;
-  width: 300px;
+  width: 315px;
   height: 260px;
   background-color: #307b8c;
   color: white;
   right: 0;
   margin-top: 18vw;
+}
+
+.ribbon-info p{
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .ribbon-info:before {

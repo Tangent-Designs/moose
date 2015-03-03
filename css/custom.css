@@ -32,9 +32,10 @@
 }
 
 p{
-  font-family: Georgia;
-  font-style: italic;
-  font-weight: bold;
+  /*font-family: Georgia;*/
+  font-family: 'Droid Sans', sans-serif;
+  /*font-style: italic;
+  font-weight: bold;*/
   color: white;
   font-size: 16px;
 }
@@ -126,11 +127,11 @@ p{
 .service-button{
   position: absolute;
   cursor: pointer;
-  bottom: 15px;
+  top: 15px;
   right: 15px;
   height: 60px;
   width: 60px;
-  z-index: 4;
+  z-index: 2;
   transition: all ease-in-out .3s;
   -webkit-transition: all ease-in-out .3s;
   -moz-transition: all ease-in-out .3s;
@@ -165,10 +166,11 @@ p{
 }
 
 .facebook-btn{
-  width: 30px;
+  width: 25px;
   vertical-align: middle;
   display: inline-block;
-  margin-left: 20px; 
+  margin-left: 20px;
+  margin-bottom: 6px; 
   transition: all ease-in-out .3s;
   -webkit-transition: all ease-in-out .3s;
   -moz-transition: all ease-in-out .3s;
@@ -192,6 +194,8 @@ p{
    -o-transform: rotateX(180deg);
    transform: rotateX(180deg);
    background: #307b8c;
+   height: 100vh;
+   width: 100vw;
 }
 
 .decal-frame{
@@ -211,7 +215,7 @@ p{
 
 .service-card .service-wrap{
   /*position: absolute;*/
-  margin-left: auto;
+  /*margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
@@ -221,7 +225,7 @@ p{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover;*/
 }
 
 .service-card .service-wrap h3 {
@@ -236,6 +240,14 @@ p{
 .service-icon-fix{
   margin-left: -20px !important;
 }
+
+.ribbon-location-sub{
+  font-family: Georgia !important;
+  font-style: italic !important;
+  font-weight: bold !important;
+  text-align: center !important;
+}
+
 
 .service-wrap .row{
   /*padding-left: 20px;*/
@@ -288,10 +300,22 @@ p{
   margin: 0 auto;
   bottom: 50px;
   text-shadow: none;
-  color: #0d0d0d;
+  color: #307b8c;
   -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+}
 
+.scroll-txt-white{
+  position: absolute;
+  width: 50px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50px;
+  text-shadow: none;
+  color: #fff;
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .margin-neg-fix{
@@ -309,12 +333,17 @@ p{
   padding-top: 20px;
 }
 
-#eastlake-info-wrap{
+#red-info-wrap{
   background-color: #b0102d; 
   color: white;
 }
 
-#chula-vista-info-wrap{
+#contact-wrap{
+  background-color: #484c4d;
+  color: white;
+}
+
+#blue-info-wrap{
   background-color: #307b8c; 
   color: white;
 }

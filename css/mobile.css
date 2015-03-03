@@ -46,6 +46,17 @@
   padding-top: 7px;
 }
 
+.mobile-service{
+    display: block;
+}
+
+.mobile-service p{
+  font-family: 'Droid Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 
 /* ============================================================
   LF FRAMES
@@ -67,9 +78,6 @@
   LOCATION FRAMES
 ============================================================ */
 
-  .mobile-service{
-    display: block;
-  }
 
   #clouds{
   	display: none;
@@ -99,10 +107,10 @@
   .service-wrap-mobile{
     position: relative;
     z-index: 2;
-    top: 45%;
+    /*top: 45%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
   }
 
   .service-icon-fix{
