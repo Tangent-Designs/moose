@@ -104,10 +104,10 @@ p{
 
 .lf-button{
   position: absolute;
-  top: 15px;
-  right: 15px;
-  height: 60px;
-  width: 60px;
+  top: 25px;
+  right: 25px;
+  height: 80px;
+  width: 80px;
   cursor: pointer;
   z-index: 3;
   transition: all ease-in-out .3s;
@@ -127,10 +127,10 @@ p{
 .service-button{
   position: absolute;
   cursor: pointer;
-  top: 15px;
-  right: 15px;
-  height: 60px;
-  width: 60px;
+  top: 25px;
+  right: 25px;
+  height: 80px;
+  width: 80px;
   z-index: 2;
   transition: all ease-in-out .3s;
   -webkit-transition: all ease-in-out .3s;

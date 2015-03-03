@@ -5,103 +5,103 @@
 	 viewBox="0 0 1440 778" enable-background="new 0 0 1440 778" xml:space="preserve">
 <g id="Layer_2">
 	<rect fill="#307B8C" width="1440" height="778"/>
-	<g display="none">
-		<g id="base" display="inline">
+	<g>
+		<g id="base">
 			<g>
 				<rect x="-140.4" y="622.8" fill-rule="evenodd" clip-rule="evenodd" fill="#F2F2F2" width="125.8" height="94.3"/>
 			</g>
 		</g>
-		<g id="shade" display="inline">
+		<g id="shade">
 			<g>
 				<rect x="-46.1" y="685.6" fill-rule="evenodd" clip-rule="evenodd" fill="#E8E8E8" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tint" display="inline">
+		<g id="tint">
 			<g>
 				<rect x="-46.1" y="654.2" fill-rule="evenodd" clip-rule="evenodd" fill="#FCFCFC" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tone" display="inline">
+		<g id="tone">
 			<g>
 				<rect x="-46.1" y="622.8" fill-rule="evenodd" clip-rule="evenodd" fill="#F2F2F2" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="base_7_" display="inline">
+		<g id="base_7_">
 			<g>
 				<rect x="-140.4" y="515.3" fill-rule="evenodd" clip-rule="evenodd" fill="#202021" width="125.8" height="94.3"/>
 			</g>
 		</g>
-		<g id="shade_7_" display="inline">
+		<g id="shade_7_">
 			<g>
 				<rect x="-46.1" y="578.1" fill-rule="evenodd" clip-rule="evenodd" fill="#0D0D0D" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tint_7_" display="inline">
+		<g id="tint_7_">
 			<g>
 				<rect x="-46.1" y="546.7" fill-rule="evenodd" clip-rule="evenodd" fill="#333335" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tone_7_" display="inline">
+		<g id="tone_7_">
 			<g>
 				<rect x="-46.1" y="515.3" fill-rule="evenodd" clip-rule="evenodd" fill="#202021" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="base_5_" display="inline">
+		<g id="base_5_">
 			<g>
 				<rect x="-142.2" y="408" fill-rule="evenodd" clip-rule="evenodd" fill="#8C0D24" width="125.8" height="94.3"/>
 			</g>
 		</g>
-		<g id="shade_5_" display="inline">
+		<g id="shade_5_">
 			<g>
 				<rect x="-47.8" y="470.8" fill-rule="evenodd" clip-rule="evenodd" fill="#680A1B" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tint_5_" display="inline">
+		<g id="tint_5_">
 			<g>
 				<rect x="-47.8" y="439.4" fill-rule="evenodd" clip-rule="evenodd" fill="#B0102D" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tone_5_" display="inline">
+		<g id="tone_5_">
 			<g>
 				<rect x="-47.8" y="408" fill-rule="evenodd" clip-rule="evenodd" fill="#51484A" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="base_3_" display="inline">
+		<g id="base_3_">
 			<g>
 				<rect x="-142.2" y="293.9" fill-rule="evenodd" clip-rule="evenodd" fill="#26616F" width="125.8" height="94.3"/>
 			</g>
 		</g>
-		<g id="shade_3_" display="inline">
+		<g id="shade_3_">
 			<g>
 				<rect x="-47.8" y="356.8" fill-rule="evenodd" clip-rule="evenodd" fill="#1C4752" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tint_3_" display="inline">
+		<g id="tint_3_">
 			<g>
 				<rect x="-47.8" y="325.4" fill-rule="evenodd" clip-rule="evenodd" fill="#307B8C" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tone_3_" display="inline">
+		<g id="tone_3_">
 			<g>
 				<rect x="-47.8" y="293.9" fill-rule="evenodd" clip-rule="evenodd" fill="#484C4D" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="base_4_" display="inline">
+		<g id="base_4_">
 			<g>
 				<rect x="-142.2" y="180.1" fill-rule="evenodd" clip-rule="evenodd" fill="#59473C" width="125.8" height="94.3"/>
 			</g>
 		</g>
-		<g id="shade_4_" display="inline">
+		<g id="shade_4_">
 			<g>
 				<rect x="-47.8" y="242.9" fill-rule="evenodd" clip-rule="evenodd" fill="#42342C" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tint_4_" display="inline">
+		<g id="tint_4_">
 			<g>
 				<rect x="-47.8" y="211.5" fill-rule="evenodd" clip-rule="evenodd" fill="#705A4C" width="31.5" height="31.4"/>
 			</g>
 		</g>
-		<g id="tone_4_" display="inline">
+		<g id="tone_4_">
 			<g>
 				<rect x="-47.8" y="180.1" fill-rule="evenodd" clip-rule="evenodd" fill="#4E4A47" width="31.5" height="31.4"/>
 			</g>
@@ -351,7 +351,7 @@
 		</clipPath>
 		<g clip-path="url(#SVGID_2_)">
 			
-				<image overflow="visible" width="943" height="860" xlink:href="4664398E.jpg"  transform="matrix(0.1246 0 0 0.1246 194.3139 582.1689)">
+				<image overflow="visible" width="943" height="860" xlink:href="4664398D.jpg"  transform="matrix(0.1246 0 0 0.1246 194.3139 582.1689)">
 			</image>
 		</g>
 	</g>
@@ -2444,10 +2444,6 @@
 		<path fill="#26616F" d="M383.2,714.6c-45.8,0-83-37.2-83-83s37.2-83,83-83s83,37.2,83,83S429,714.6,383.2,714.6z"/>
 		<circle fill="#FFFFFF" cx="383.2" cy="631.6" r="75.3"/>
 	</g>
-	<circle fill="#F2F2F2" cx="193.3" cy="504" r="15.7"/>
-	<circle fill="#F2F2F2" cx="1246.5" cy="504" r="15.7"/>
-	<circle fill="#F2F2F2" cx="1246.5" cy="146.9" r="15.7"/>
-	<circle fill="#F2F2F2" cx="193.1" cy="143" r="15.7"/>
 </g>
 <g id="Layer_5">
 	<g>
