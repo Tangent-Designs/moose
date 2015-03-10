@@ -61,6 +61,7 @@ p{
   height: 100vh;
   width: 100vw;
   /*z-index: 1;*/
+  overflow: hidden;
   position: relative;
   z-index: 2;
   background-image: url("../img/lf/landing-frame-bg.svg");
@@ -295,6 +296,7 @@ p{
 .scroll-txt{
   position: absolute;
   width: 50px;
+  width: 161px;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -307,7 +309,7 @@ p{
 
 .scroll-txt-white{
   position: absolute;
-  width: 50px;
+  width: 161px;
   left: 0;
   right: 0;
   margin: 0 auto;
