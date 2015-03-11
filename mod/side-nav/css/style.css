@@ -149,12 +149,28 @@ Main components
   -o-transform: scale(1);
   transform: scale(1);
 }
+
 .no-touch #cd-vertical-nav a:hover .cd-label {
   opacity: 1;
 }
 .no-touch #cd-vertical-nav a.is-selected .cd-dot {
-  background-color: white;
+  background-color: #b0102d;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
+
+.no-touch #cd-vertical-nav a.is-selected .cd-label{
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
 .no-touch #cd-vertical-nav .cd-dot {
   position: relative;
   /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
@@ -162,7 +178,7 @@ Main components
   height: 12px;
   width: 12px;
   border-radius: 50%;
-  background-color: #b0102d;
+  background-color: #808080;
   -webkit-transition: -webkit-transform 0.2s, background-color 0.5s;
   -moz-transition: -moz-transform 0.2s, background-color 0.5s;
   transition: transform 0.2s, background-color 0.5s;
@@ -227,11 +243,16 @@ Main components
   background-color: inherit;
   border-radius: inherit;
 }
+
 .touch .cd-nav-trigger span::before {
   top: -9px;
 }
 .touch .cd-nav-trigger span::after {
   bottom: -9px;
+}
+
+.touch .cd-vertical-nav a span{
+  background-color: black;
 }
 
 .touch #cd-vertical-nav {

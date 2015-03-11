@@ -115,7 +115,7 @@ $(window).load(function() {
 //      Service Accordian      //
 /////////////////////////////////
 
-var arrow = $('.lf-down-arrow');
+var arrow = $('.lf-down-arrow, scroll-txt');
 arrow.click(function() {
     $('html, body').animate({
         scrollTop: $("#eastlake").offset().top
