@@ -39,7 +39,7 @@ p{
   color: white;
   font-size: 16px;
 }
-html{
+.wrapper{
   opacity: 0;
 }
 

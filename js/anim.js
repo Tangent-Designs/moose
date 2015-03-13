@@ -4,7 +4,7 @@
 
 $(window).load(function(){
 
-  $('html').velocity({
+  $('.wrapper').velocity({
     opacity: '1',
   });
 
