@@ -6,7 +6,16 @@ $(window).load(function(){
 
   $('.wrapper').velocity({
     opacity: '1',
+  },{
+    duration: 400 
   });
+
+  $('.load-frame').velocity({
+    opacity: '0',
+  }, { 
+      display: "none",
+      duration: 100 
+     });
 
 })
 

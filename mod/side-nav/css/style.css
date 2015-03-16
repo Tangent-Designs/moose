@@ -109,6 +109,7 @@ Main components
 
 .no-touch #cd-vertical-nav {
   position: fixed;
+  z-index: 4 !important;
   left: 40px;
   top: 50%;
   bottom: auto;
