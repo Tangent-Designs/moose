@@ -30,5 +30,3 @@ $(window).load(function() {
 }); //ready function
 
 
-
-var h = $('.service-accordian').height();

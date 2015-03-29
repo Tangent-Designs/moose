@@ -179,9 +179,8 @@ if ($(window).width() <= 1120){
 
   var h = $('.service-accordian').height();
   $('.lf-wrap, .flipdiv').css({
-    height: h-'100',
+    height: h - '80',
   });
-  alert(h)
 
 } // if
 
