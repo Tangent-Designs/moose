@@ -65,14 +65,6 @@ var load_frame_anim = function(){
     duration: 400 ,
   });
 
-  // load_frame.velocity({
-  //   opacity: '1',
-  // }, { 
-  //     display: "block",
-  //     duration: 100 
-  //  });
-
-
 } // load_frame
 
 
