@@ -1,0 +1,11 @@
+@media only screen and (min-width:51.25em) { 
+
+	.service-wrap .mobile h2 {
+	  font-size: 5vmin;
+	}
+
+	.service-card .row p{
+	  display: block;
+	}
+
+} 

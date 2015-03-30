@@ -17,6 +17,10 @@
 /* ============================================================
   SERVICE FRAMES
 ============================================================ */
+.service-card .row p{
+  display: none;
+}
+
 .service-light-bg{
   background-color: #4c909b;
   vertical-align: center;

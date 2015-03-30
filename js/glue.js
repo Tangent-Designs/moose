@@ -8,7 +8,7 @@ $(window).load(function() {
 	load_frame_anim();
 	logo_intro_anim();
 	flip_landing_frame();
-
+	service_frame_height();
 
 	/*====================================================
 

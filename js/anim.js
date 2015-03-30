@@ -1,26 +1,4 @@
 
-/////////////////////////////////
-//      Load page              //
-/////////////////////////////////
-
-var load_frame_anim = function(){
-
-  wrapper.velocity({
-    opacity: '1',
-  },{
-    duration: 400 
-  });
-
-  load_frame.velocity({
-    opacity: '0',
-  }, { 
-      display: "none",
-      duration: 100 
-     });
-
-} // load_frame
-
-
 
 /////////////////////////////////
 //      Flip landing frame     //
@@ -76,6 +54,30 @@ var flip_landing_frame = function(){
 
 
 /////////////////////////////////
+//      Load page              //
+/////////////////////////////////
+
+var load_frame_anim = function(){
+
+  wrapper.velocity({
+    opacity: '1',
+  },{
+    duration: 400 ,
+  });
+
+  // load_frame.velocity({
+  //   opacity: '1',
+  // }, { 
+  //     display: "block",
+  //     duration: 100 
+  //  });
+
+
+} // load_frame
+
+
+
+/////////////////////////////////
 //      Logo intro animation   //
 /////////////////////////////////
 
@@ -109,13 +111,11 @@ var logo_intro_anim = function(){
 
 
           logo_moose.velocity({
-            rotateZ : "360deg",
             top     : (lf_wrap_height - logo_moose_height) / 2,
-            scale   : 3.1,
           },{
-            duration  : 1500,
+            duration  : 0,
             easing    : [40, 10],
-            delay     :500,
+            delay     :200,
             complete  : function(){
                 logo_holder.css('display', 'block');
             } // callback
@@ -123,9 +123,9 @@ var logo_intro_anim = function(){
           });
 
           logo_moose.velocity({
-            rotateZ : "0deg",
+            rotateZ : "360deg",
             top     : logo_moose_top,
-            scale   : 1,
+            width   : '225px',
           },{
             duration  : 1000,
             easing    : [40, 10],
@@ -160,7 +160,7 @@ var arrow_scroll = function(){
 var service_accordian = function(){
 
 
-  accordian_h2.next().hide();
+  // accordian_h2.next().hide();
 
   accordian_h2.click(function(event) {
     accordian_h2.next().velocity("slideUp", { duration: 120 });
@@ -175,14 +175,20 @@ var service_accordian = function(){
 //      Mobile Size LF         //
 /////////////////////////////////
 
-if ($(window).width() <= 1120){  
+var service_frame_height = function(){
+
+  if ($(window).width() <= 1120){  
 
   var h = $('.service-accordian').height();
   $('.lf-wrap, .flipdiv').css({
-    height: h - '80',
+    height: h + 140,
   });
 
 } // if
+
+} // service_frame_height
+
+
 
 
 
