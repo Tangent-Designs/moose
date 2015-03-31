@@ -187,6 +187,19 @@ p{
   -o-transform: scale(1.2);
 }
 
+.loading-txt{
+  position: absolute;
+  width: 190px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: 50px;
+  text-shadow: none;
+  color: #b0102d;
+  -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 /* ============================================================
   SERVICE FRAME
 ============================================================ */
@@ -297,7 +310,6 @@ p{
 
 .scroll-txt{
   position: absolute;
-  width: 50px;
   width: 161px;
   left: 0;
   right: 0;

@@ -65,6 +65,13 @@ var load_frame_anim = function(){
     duration: 400 ,
   });
 
+  fade_load_out.velocity({
+    opacity: '0',
+  },{
+    duration: 200 ,
+  });
+
+
 } // load_frame
 
 

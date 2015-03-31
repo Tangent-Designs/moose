@@ -1,6 +1,6 @@
 // all interactive elements on the page
-var fade_load                 = $('.fade-load'),
-	load_frame              = $('.load-frame'),
+var fade_load               = $('.fade-load'),
+	fade_load_out           = $('.fade-load-out'),
 	//lf_wrap                 = $('#logo-moose'),
 	//logo_holder             = $('#logo-holder'),
 	lf_card                 = $('.lf-card'),
