@@ -1,5 +1,5 @@
 // all interactive elements on the page
-var wrapper                 = $('.wrapper, .service-card, .flipdiv'),
+var fade_load                 = $('.fade-load'),
 	load_frame              = $('.load-frame'),
 	//lf_wrap                 = $('#logo-moose'),
 	//logo_holder             = $('#logo-holder'),

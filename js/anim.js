@@ -59,7 +59,7 @@ var flip_landing_frame = function(){
 
 var load_frame_anim = function(){
 
-  wrapper.velocity({
+  fade_load.velocity({
     opacity: '1',
   },{
     duration: 400 ,
