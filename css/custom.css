@@ -187,9 +187,9 @@ p{
   -o-transform: scale(1.2);
 }
 
-.loading-txt{
+.load-txt{
   position: absolute;
-  width: 190px;
+  width: 230px;
   left: 0;
   right: 0;
   margin: 0 auto;
