@@ -71,6 +71,7 @@ var load_frame_anim = function(){
     duration: 200 ,
   });
 
+  $('#down-arrow').addClass('lf-down-arrow ');
 
 } // load_frame
 
