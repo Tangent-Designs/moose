@@ -90,34 +90,18 @@ var logo_intro_anim = function(){
           // top
           logo_holder_top    = (lf_wrap_height - logo_holder_height) / 2,
           logo_moose_top     = logo_holder_top + 11;
-          // width
-
-          // positioning and scaling defaults
-          logo_moose.css({
-            top       : logo_moose_top,
-          });
 
           logo_holder.css({
             top       : logo_holder_top,
           });
 
-
-          logo_moose.velocity({
-            top     : (lf_wrap_height - logo_moose_height) / 2,
-          },{
-            duration  : 0,
-            easing    : [40, 10],
-            delay     :200,
-            complete  : function(){
-                logo_holder.css('display', 'block');
-            } // callback
-
-          });
+          logo_holder.css('display', 'block');
 
           logo_moose.velocity({
             rotateZ : "360deg",
-            top     : logo_moose_top,
+            top     : '-183px',
             width   : '225px',
+            bottom  : 'none',
           },{
             duration  : 1000,
             easing    : [40, 10],

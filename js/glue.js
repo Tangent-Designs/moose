@@ -1,3 +1,5 @@
+load_frame_anim();
+
 $(window).load(function() {
 	
 	/*====================================================
@@ -5,7 +7,7 @@ $(window).load(function() {
 	Load Events
 
 	====================================================*/
-	load_frame_anim();
+	
 	logo_intro_anim();
 	flip_landing_frame();
 	service_frame_height();
