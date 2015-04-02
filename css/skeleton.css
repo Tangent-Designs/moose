@@ -375,10 +375,10 @@ form {
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
-  margin-top: 3rem;
-  margin-bottom: 3.5rem;
+   margin-top: 8px;
+  margin-bottom: 8px;
   border-width: 0;
-  border-top: 1px solid #E1E1E1; }
+  width: 80%; }
 
 
 /* Clearing

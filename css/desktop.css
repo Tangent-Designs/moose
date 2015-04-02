@@ -53,7 +53,12 @@
   margin-top: 10vw;
 }
 
-.ribbon-title p{
+.ribbon-title-light p{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.ribbon-title-dark p{
   text-align: center;
   margin-top: -10px;
 }
@@ -72,30 +77,64 @@
     border-left-color: transparent;
   }
 
-.ribbon-info{
+.ribbon-info-light{
   position: absolute;
   z-index: 1;
   width: 315px;
   height: 260px;
-  background-color: #307b8c;
+  background-color: #E8E8E8;
   color: white;
   right: 0;
   margin-top: 18vw;
 }
 
-.ribbon-info p{
+.ribbon-info-light p{
   font-family: 'Droid Sans', sans-serif;
   font-weight: normal;
   font-style: normal;
+  color: #484C4D !important;
 }
 
-.ribbon-info:before {
+.ribbon-info-light:before {
     content: "";
     width: 3em;
     /* bottom: -.5em; */
     position: absolute;
     display: block;
-    border: 130px solid #307b8c;
+    border: 130px solid #E8E8E8;
+    /* box-shadow: 0px 1px 0px rgba(0,0,0,0.4); */
+    z-index: -2;
+    left: -11.35em;
+    border-right-width: -0.25em;
+    border-left-color: transparent;
+  }
+
+
+  .ribbon-info-dark{
+  position: absolute;
+  z-index: 1;
+  width: 315px;
+  height: 260px;
+  background-color: #484C4D;
+  color: white;
+  right: 0;
+  margin-top: 18vw;
+}
+
+.ribbon-info-dark p{
+  font-family: 'Droid Sans', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #e8e8e8 !important;
+}
+
+.ribbon-info-dark:before {
+    content: "";
+    width: 3em;
+    /* bottom: -.5em; */
+    position: absolute;
+    display: block;
+    border: 130px solid #484C4D;
     /* box-shadow: 0px 1px 0px rgba(0,0,0,0.4); */
     z-index: -2;
     left: -11.35em;
@@ -114,7 +153,23 @@ svg#bigTriangleColor {
   stroke-width: 2;
 }
 
+hr.tapered-dark {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
+}
 
+hr.tapered-light {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
+    background-image:    -moz-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
+    background-image:     -ms-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
+    background-image:      -o-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
+}
 
 /* ============================================================
   CLOUDS

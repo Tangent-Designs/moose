@@ -187,18 +187,17 @@
             <p class="ribbon-location-sub">at Village Marketplace</p>
           </div>
 
-          <div class="ribbon-info">
-            <!-- <h3>Contact
-              <div class="fb-like" style="position: relative;
-                  top: 50%;transform: translateY(-25%);" data-href="https://www.facebook.com/moosesbarbershoprdr" data-width="50" data-layout="button" data-action="like" data-show-faces="true" data-share="true">
-              </div>
-            </h3> -->
-            <h3>Contact<a href="https://www.facebook.com/moosesbarbershop?ref=br_tf" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3>
+          <div class="ribbon-info-light">
+            <!-- <h3>Contact<a href="https://www.facebook.com/moosesbarbershop?ref=br_tf" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3> -->
+            <br><br><br>
             <p>1745 Eastlake Pkwy Ste 101 Chula Vista, CA 91915</p>
+            <hr class="tapered-light">
             <p>(619) 271-4026</p>
-            <h3>Hours</h3>
+            <hr class="tapered-light">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
+            <hr class="tapered-light">
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop?ref=br_tf" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
           </div>
 
 
@@ -215,13 +214,16 @@
             <p class="ribbon-location-sub">off East H Street</p>
           </div>
 
-          <div class="ribbon-info">
-            <h3>Contact<a href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3>
+          <div class="ribbon-info-dark">
+            <!-- <h3>Contact<a href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3> -->
+            <br><br><br>
             <p>1020 Tierra Del Rey Chula Vista, CA 91910</p>
+            <hr class="tapered-dark">
             <p>(619) 271-7529</p>
-            <h3>Hours</h3>
+            <hr class="tapered-dark">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
+            <hr class="tapered-dark">
           </div>
 
 
@@ -238,13 +240,16 @@
             <p class="ribbon-location-sub">at Trolley Square</p>
           </div>
 
-          <div class="ribbon-info">
-            <h3>Contact<a href="https://www.facebook.com/moosesbarbershopsantee" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3>
+          <div class="ribbon-info-light">
+            <!-- <h3>Contact<a href="https://www.facebook.com/moosesbarbershopsantee" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3> -->
+            <br><br><br>
             <p>9824 Mission Gorge Rd Santee, CA 92071</p>
+            <hr class="tapered-light">
             <p>(619) 749-3834</p>
-            <h3>Hours</h3>
+            <hr class="tapered-light">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
+            <hr class="tapered-light">
           </div>
 
 
@@ -431,6 +436,16 @@
   var b=document.getElementsByTagName("script")[0];
   a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0031/5492.js?"+Math.floor(new Date().getTime()/3600000);
   a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+  //FACEBOOK API CALL
+  <div id="fb-root"></div>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
 
 </script>
 
