@@ -9,5 +9,5 @@ var fade_load               = $('.fade-load'),
 	// service_button          = $('.service-button'),
 	lf_service_card         = $('.lf-card, .service-card'),
 	lf_service_button       = $('.lf-button, .service-button'),
-	down_arrow              = $('.lf-down-arrow, scroll-txt'),
+	down_arrow              = $('#down-arrow, .scroll-txt'),
 	accordian_h2            = $('.service-accordian h2');
