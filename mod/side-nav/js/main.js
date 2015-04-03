@@ -21,6 +21,7 @@ $(document).on("scroll", onScroll);
       });
   });
 
+
 function onScroll(event){
     var scrollPos = $(document).scrollTop();
     $('#cd-vertical-nav a').each(function () {
