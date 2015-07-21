@@ -23,7 +23,6 @@
   <link rel="stylesheet" href="css/mobile.css" media="(max-width: 70em)">
   <link rel="stylesheet" href="css/tablet.css" media="(min-width: 51.25em)">
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
 
   <!-- js -->
   <script src="js/modernizr.js"></script>
@@ -33,25 +32,25 @@
 
  <!-- FACEBOOK API CALL -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <!--<script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-  </script>
+  </script>-->
 
       <!-- +++++++++++++  -->
       <!--    CLOUDS      -->
       <!-- +++++++++++++  -->
-      <div id="clouds" style="z-index:0;">
+      <!-- <div id="clouds" style="z-index:0;">
         <div class="cloud x1"></div>
         <div class="cloud x2"></div>
         <div class="cloud x3"></div>
         <div class="cloud x4"></div>
         <div class="cloud x5"></div>
-      </div>
+      </div> -->
 
       
       <!-- ++++++++++++++++  -->
@@ -63,10 +62,10 @@
         <div class="lf-card">
           <img src="img/lf/button-services-menu.svg" alt="moose's barber shop menu button" class="lf-button fade-load">
           <img src="img/lf/logo-moose.svg" alt="moose's barber shop logo" title="moose's barber shop logo" id="logo-moose" class="desktop">
-          <img src="img/lf/logo-holder.svg" alt="moose's barber shop logo holder" id="logo-holder" class="desktop">
+          <img src="img/lf/logo-holder-alert.svg" alt="moose's barber shop logo holder" id="logo-holder" class="desktop">
           <img src="img/lf/mobile-moose-logo.svg" alt="moose's barber shop mobile logo" class="mobile" id="mobile-lf-img">
           <img src="img/lf/arrow-down.svg" alt="down arrow" class="fade-load" id='down-arrow'>
-          <h4 class="scroll-txt fade-load">Scroll for locations</h4>
+          <h4 class="scroll-txt fade-load desktop">Scroll for locations</h4>
           <h4 class="load-txt fade-load-out">Loading Awesomeness....</h4>
         </div>
 
@@ -131,12 +130,12 @@
                 </div>
               </div>
 
-            </div>
+            </div> <!-- service-wrap -->
             <img src="img/lf/button-home.svg" alt="moose's barber shop button moose" class="service-button">
             <img src="img/lf/arrow-down-white.svg" alt="down arrow" class="lf-down-arrow">
             <h4 class="scroll-txt-white">Scroll for locations</h4>
-          </div>
-        </div>
+          </div> <!-- flipdiv -->
+        </div> <!-- fade-load -->
       </section>
 
 
@@ -174,7 +173,7 @@
         </li>
         <li>
           <a href="#sdsu" data-number="5">
-            <span class="cd-dot red-dot"></span>
+            <span class="cd-dot red-dot blvd-radar"></span>
             <span class="cd-label">BLVD 63</span>
           </a>
         </li>
@@ -207,8 +206,8 @@
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
             <hr class="tapered-light">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop?ref=br_tf" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershop?ref=br_tf" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
           </div>
 
 
@@ -234,8 +233,8 @@
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
             <hr class="tapered-dark">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
           </div>
 
 
@@ -261,8 +260,8 @@
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
             <hr class="tapered-light">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershopsantee" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershopsantee" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
           </div>
 
 
@@ -280,15 +279,13 @@
             <p class="ribbon-location-sub">at BLVD 63</p>
           </div>
 
-          <!-- <div class="ribbon-info">
-            <h3>Contact<a href="https://www.facebook.com/moosesbarbershop?ref=br_tf" target="_blank"><img src="img/locations/icon-fb-alt.svg" alt="" width="30px" class="facebook-btn"></a></h3>
-            <p>9824 Mission Gorge Rd Santee, CA 92071</p>
-            <p>(619) 459-1280</p>
-            <h3>Hours</h3>
-            <p>Mon - Fri : 10am - 8pm </p>
-            <p>Sat - Sun : 10am - 6pm </p>
-            <p>Coming soon</p>
-          </div> -->
+          <div class="ribbon-info-dark">
+            <br><br>
+            <p style="font-size: 24px;">Coming mid July</p>
+            <hr class="tapered-light">
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+          </div>
 
 
       </section>
@@ -301,76 +298,76 @@
       <!-- +++++++++++++ -->
 
       <!-- eastlake -->
-      <section class="module content mobile-service" id="red-info-wrap" style="padding:0;">
+      <section class="module content mobile-service" id="black-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">Eastlake</h1>
           <p class="ribbon-location-sub">at Village Marketplace</p>
-          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
+          <img src="img/locations/bar-mustacheBlack.svg" alt="" class="bar-mustache">
             <br>
-            <p><a href="https://www.google.com/maps/place/1745+Eastlake+Pkwy+%23101,+Chula+Vista,+CA+91915/@32.6196943,-116.9611925,17z/data=!3m1!4b1!4m2!3m1!1s0x80d945be0672c463:0x3bdf22c888c383ca" style="color:#e8e8e8" target="_blank">1745 Eastlake Pkwy Ste 101 Chula Vista, CA 91915</a></p>
-          <hr class="tapered-red">
-            <p style="color:#e8e8e8">(619) 271-4026</p>
-          <hr class="tapered-red">
+            <p><a class="google-link" href="https://www.google.com/maps/place/1745+Eastlake+Pkwy+%23101,+Chula+Vista,+CA+91915/@32.6196943,-116.9611925,17z/data=!3m1!4b1!4m2!3m1!1s0x80d945be0672c463:0x3bdf22c888c383ca" style="color:#e8e8e8" target="_blank">1745 Eastlake Pkwy Ste 101 Chula Vista, CA 91915</a></p>
+          <hr class="tapered-dark">
+            <p>(619) 271-4026</p>
+          <hr class="tapered-dark">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
-          <hr class="tapered-red">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop?ref=br_tf" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershop?ref=br_tf" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+          <hr class="tapered-dark">
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
             <br><br>
         </div>
       </section>
-      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#307b8c;">
-        <path d="M0 0 L50 45 L100 0 Z" style="fill: #b0102d; stroke: #b0102d;"/>
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#E8E8E8;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #202021; stroke: #202021;"/>
       </svg>
       
       <!-- chula vista -->
-      <section class="module content mobile-service" id="blue-info-wrap" style="padding:0;">
+      <section class="module content mobile-service" id="white-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">Chula Vista</h1>
           <p class="ribbon-location-sub">off East H Street</p>
           <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
           <br>
-            <p><a href="https://www.google.com/maps/place/1020+Tierra+Del+Rey,+Chula+Vista,+CA+91910/@32.6374085,-117.0199563,17z/data=!3m1!4b1!4m2!3m1!1s0x80d94fba03b2d1a1:0x6c16d26f7372f0d1" target="_blank" style="color:#e8e8e8">1020 Tierra Del Rey Chula Vista, CA 91910</a></p>
-          <hr class="tapered-blue">
-            <p style="color:#e8e8e8">(619) 271-7529</p>
-          <hr class="tapered-blue">
+            <p><a class="google-link" href="https://www.google.com/maps/place/1020+Tierra+Del+Rey,+Chula+Vista,+CA+91910/@32.6374085,-117.0199563,17z/data=!3m1!4b1!4m2!3m1!1s0x80d94fba03b2d1a1:0x6c16d26f7372f0d1" target="_blank" style="color:#e8e8e8">1020 Tierra Del Rey Chula Vista, CA 91910</a></p>
+          <hr class="tapered-light">
+            <p>(619) 271-7529</p>
+          <hr class="tapered-light">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
-          <hr class="tapered-blue">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershoprdr?ref=br_tf" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+          <hr class="tapered-light">
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
             <br><br>
         </div>
       </section>
-      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#b0102d;">
-        <path d="M0 0 L50 45 L100 0 Z" style="fill: #307b8c; stroke: #307b8c;"/>
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#202021;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #e8e8e8; stroke: #e8e8e8;"/>
       </svg>
       
       <!-- santee -->
-      <section class="module content mobile-service" id="red-info-wrap" style="padding:0;">
+      <section class="module content mobile-service" id="black-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">Santee</h1>
           <p class="ribbon-location-sub">at Trolley Square</p>
-          <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
+          <img src="img/locations/bar-mustacheBlack.svg" alt="" class="bar-mustache">
           <br>
-            <p><a href="https://www.google.com/maps/place/9824+Mission+Gorge+Rd,+Santee+Trolley+Square,+Santee,+CA+92071/@32.8405157,-116.9819276,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbe2aa7b806d15:0x9ec6f80317fb503e" target="_blank" style="color:#e8e8e8">9824 Mission Gorge Rd Santee, CA 92071</a></p>
-          <hr class="tapered-red">
-            <p style="color:#e8e8e8">(619) 749-3834</p>
-          <hr class="tapered-red">
+            <p><a class="google-link" href="https://www.google.com/maps/place/9824+Mission+Gorge+Rd,+Santee+Trolley+Square,+Santee,+CA+92071/@32.8405157,-116.9819276,17z/data=!3m1!4b1!4m2!3m1!1s0x80dbe2aa7b806d15:0x9ec6f80317fb503e" target="_blank" style="color:#e8e8e8">9824 Mission Gorge Rd Santee, CA 92071</a></p>
+          <hr class="tapered-dark">
+            <p>(619) 749-3834</p>
+          <hr class="tapered-dark">
             <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p>
-          <hr class="tapered-red">
-            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershopsantee" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
-            <a href="https://www.facebook.com/moosesbarbershopsantee" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+          <hr class="tapered-dark">
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
             <br><br>
         </div>
       </section>
-      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#307b8c;">
-        <path d="M0 0 L50 45 L100 0 Z" style="fill: #b0102d; stroke: #b0102d;"/>
+      <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#e8e8e8;">
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #202021; stroke: #202021;"/>
       </svg>
 
       <!-- SDSU -->
-      <section class="module content mobile-service" id="blue-info-wrap" style="padding:0;">
+      <section class="module content mobile-service" id="white-info-wrap" style="padding:0;">
         <div class="container">
           <h1 class="text-center">El Cajon Blvd</h1>
           <p class="ribbon-location-sub">at BLVD 63</p>
@@ -381,12 +378,17 @@
           <h2 class="">Hours</h2> -->
             <!-- <p>Mon - Fri : 10am - 8pm </p>
             <p>Sat - Sun : 10am - 6pm </p> -->
-            <p>Store coming soon</p>
+            <p>Store coming mid July</p>
+            <hr class="tapered-light">
+            <p><a class="google-link" href="https://www.google.com/maps/place/6353+El+Cajon+Blvd,+The+College+Center+Shopping+Center,+San+Diego,+CA+92115/@32.7643687,-117.0614654,17z/data=!3m1!4b1!4m2!3m1!1s0x80d95693fbe4662b:0xf69ff1af101fadf6" target="_blank" style="color:#e8e8e8">6345 El Cajon Blvd San Diego, CA 92115</a></p>
+            <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
+            <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
+            <br>
             <br>
         </div>
       </section>
       <svg id="bigTriangleColor" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="50" viewBox="0 0 100 102" preserveAspectRatio="none" style="background-color:#484c4d;">
-        <path d="M0 0 L50 45 L100 0 Z" style="fill: #307b8c; stroke: #307b8c;"/>
+        <path d="M0 0 L50 45 L100 0 Z" style="fill: #e8e8e8; stroke: #e8e8e8;"/>
       </svg>
       
 
@@ -399,11 +401,12 @@
           <img src="img/locations/bar-creamSoda.svg" alt="" class="bar-mustache">
           <br>
           <div class="container">
-            <form>
+            <form novalidate>
 
               <div class="row">
                 <div class="tweleve columns">
-                  <input class="u-full-width" type="email" placeholder="email@gmail.com" id="exampleEmailInput">
+                  <span class="error-mail" aria-live="polite"></span>
+                  <input class="u-full-width" type="email" required placeholder="YourEmail@gmail.com" id="email-input">
                 </div>
               </div>
 
@@ -437,7 +440,7 @@
 
 <!-- libs -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.1/velocity.min.js"></script>
+<script src="js/velocity.js"></script>
 <script src="js/globals.js"></script>
 <script src="js/anim.js"></script>
 <script src="js/glue.js"></script>
@@ -456,11 +459,25 @@
   ga('send', 'pageview');
 
 
-  // CRAZY EGG API CALL
-  setTimeout(function(){var a=document.createElement("script");
-  var b=document.getElementsByTagName("script")[0];
-  a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0031/5492.js?"+Math.floor(new Date().getTime()/3600000);
-  a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+//FORM VALIDATION
+//https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
+var form  = document.getElementsByTagName('form')[0];
+var email = document.getElementById('email-input');
+var error = document.querySelector('.error-mail');
+
+email.addEventListener("keyup", function (event) {
+  if (email.validity.valid) {
+    error.innerHTML = ""; 
+    error.className = "error-mail"; 
+  }
+}, false);
+form.addEventListener("submit", function (event) {
+  if (!email.validity.valid) {
+    error.innerHTML = "Tell Muhammad NO!";
+    error.className = "error-mail active";
+    event.preventDefault();
+  }
+}, false);
 
 </script>
 

@@ -153,23 +153,6 @@ svg#bigTriangleColor {
   stroke-width: 2;
 }
 
-hr.tapered-dark {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
-    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
-    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
-    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.3), rgba(0,0,0,0));
-}
-
-hr.tapered-light {
-    border: 0;
-    height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
-    background-image:    -moz-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
-    background-image:     -ms-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
-    background-image:      -o-linear-gradient(left, rgba(199,199,199,0), rgba(199,199,199,0.3), rgba(199,199,199,0));
-}
 
 /* ============================================================
   CLOUDS
