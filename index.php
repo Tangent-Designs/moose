@@ -32,14 +32,14 @@
 
  <!-- FACEBOOK API CALL -->
   <div id="fb-root"></div>
-  <!--<script>(function(d, s, id) {
+  <script>(function(d, s, id) {
     var js, fjs = d.getElementsByTagName(s)[0];
     if (d.getElementById(id)) return;
     js = d.createElement(s); js.id = id;
     js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-  </script>-->
+  </script>
 
       <!-- +++++++++++++  -->
       <!--    CLOUDS      -->
@@ -281,7 +281,12 @@
 
           <div class="ribbon-info-dark">
             <br><br>
-            <p style="font-size: 24px;">Coming mid July</p>
+            <p><a class="google-link" href="https://www.google.com/maps/place/6353+El+Cajon+Blvd,+The+College+Center+Shopping+Center,+San+Diego,+CA+92115/@32.7643687,-117.0614654,17z/data=!3m1!4b1!4m2!3m1!1s0x80d95693fbe4662b:0xf69ff1af101fadf6" target="_blank" style="color:#e8e8e8">6353 El Cajon Blvd San Diego, CA 92115</a></p>
+            <hr class="tapered-light">
+            <p>(619) 749-3834</p>
+            <hr class="tapered-light">
+            <p>Mon - Fri : 10am - 8pm </p>
+            <p>Sat - Sun : 10am - 6pm </p>
             <hr class="tapered-light">
             <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
             <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
@@ -372,15 +377,14 @@
           <h1 class="text-center">El Cajon Blvd</h1>
           <p class="ribbon-location-sub">at BLVD 63</p>
           <img src="img/locations/bar-mustache.svg" alt="" class="bar-mustache">
-          <!-- <h2 class="">Contact</h2>
-            <p>1020 Tierra Del Rey Chula Vista, CA 91910</p>
-            <p>(619) 271-7529</p>
-          <h2 class="">Hours</h2> -->
-            <!-- <p>Mon - Fri : 10am - 8pm </p>
-            <p>Sat - Sun : 10am - 6pm </p> -->
-            <p>Store coming mid July</p>
+            <br>
+              <p><a class="google-link" href="https://www.google.com/maps/place/6353+El+Cajon+Blvd,+The+College+Center+Shopping+Center,+San+Diego,+CA+92115/@32.7643687,-117.0614654,17z/data=!3m1!4b1!4m2!3m1!1s0x80d95693fbe4662b:0xf69ff1af101fadf6" target="_blank" style="color:#e8e8e8">6353 El Cajon Blvd San Diego, CA 92115</a></p>
+            <hr class="tapered-dark">
+              <p>(619) 487-0938</p>
+            <hr class="tapered-dark">
+              <p>Mon - Fri : 10am - 8pm </p>
+              <p>Sat - Sun : 10am - 6pm </p>
             <hr class="tapered-light">
-            <p><a class="google-link" href="https://www.google.com/maps/place/6353+El+Cajon+Blvd,+The+College+Center+Shopping+Center,+San+Diego,+CA+92115/@32.7643687,-117.0614654,17z/data=!3m1!4b1!4m2!3m1!1s0x80d95693fbe4662b:0xf69ff1af101fadf6" target="_blank" style="color:#e8e8e8">6345 El Cajon Blvd San Diego, CA 92115</a></p>
             <div class="fb-like" data-href="https://www.facebook.com/moosesbarbershop" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div>
             <a href="https://www.facebook.com/moosesbarbershop" target="_blank" style="display:inline; margin-left:10px; color:#4561B0 !important; font-size: 13px;">view page</a>
             <br>
@@ -401,20 +405,20 @@
           <img src="img/locations/bar-creamSoda.svg" alt="" class="bar-mustache">
           <br>
           <div class="container">
-            <form novalidate>
+            <form novalidate action="http://www.moosesbarbershop.com/email.php" method="POST">
 
               <div class="row">
                 <div class="tweleve columns">
                   <span class="error-mail" aria-live="polite"></span>
-                  <input class="u-full-width" type="email" required placeholder="YourEmail@gmail.com" id="email-input">
+                  <input class="u-full-width" type="email" name="email" required placeholder="YourEmail@gmail.com" id="email-input">
                 </div>
               </div>
 
-              <textarea class="u-full-width" placeholder="Hey Moose Daddy" id="exampleMessage"></textarea>
+              <textarea class="u-full-width textarea" name="textarea" placeholder="Hey Moose Daddy" id="exampleMessage"></textarea>
 
               <div class="row">
                 <div class="tweleve columns">
-                  <input class="button-primary" type="submit" value="Submit">
+                  <input class="button-primary" type="submit" value="send"> 
                 </div>
               </div>
 
@@ -461,19 +465,21 @@
 
 //FORM VALIDATION
 //https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation
-var form  = document.getElementsByTagName('form')[0];
-var email = document.getElementById('email-input');
-var error = document.querySelector('.error-mail');
+var form    = document.getElementsByTagName('form')[0];
+var email   = document.getElementById('email-input');
+var error   = document.querySelector('.error-mail');
 
 email.addEventListener("keyup", function (event) {
   if (email.validity.valid) {
-    error.innerHTML = ""; 
+    error.innerHTML = " "; 
     error.className = "error-mail"; 
   }
 }, false);
+
+
 form.addEventListener("submit", function (event) {
   if (!email.validity.valid) {
-    error.innerHTML = "Tell Muhammad NO!";
+    error.innerHTML = "Don't worry we don't send junk mail! Remember the @ sign.";
     error.className = "error-mail active";
     event.preventDefault();
   }
