@@ -1,34 +1,38 @@
  h1 {
   margin-bottom: 0px;
-  font-family: 'Lobster', serif;
-  text-shadow: -3px 2px #59473c;
+  font-family: 'optima', serif;
+  /*text-shadow: -3px 2px #59473c;*/
   font-size: 56px;
+  font-weight: bold;
 }
 
  h2 {
   /*margin-top: 40px;*/
-  font-family: 'Lobster', serif;
-  text-shadow: -3px 2px #59473c;
+  font-family: 'optima', serif;
+  /*text-shadow: -3px 2px #59473c;*/
   font-size: 42px;
   color: #fff;
+  font-weight: bold;
 }
 
  h3 {
   /*margin-top: 40px;*/
-  font-family: 'Lobster', serif;
-  text-shadow: -3px 2px #59473c;
+  font-family: 'optima', serif;
+  /*text-shadow: -3px 2px #59473c;*/
   font-size: 28px;
   margin-top: 15px;
   color: white;
+
 }
 
  h4 {
   /*margin-top: 40px;*/
-  font-family: 'Lobster', serif;
-  text-shadow: -3px 2px #59473c;
+  font-family: 'optima', serif;
+  /*text-shadow: -3px 2px #59473c;*/
   font-size: 22px;
   margin-top: 15px;
   color: white;
+
 }
 
 p{
